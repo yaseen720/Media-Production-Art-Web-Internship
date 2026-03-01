@@ -1,0 +1,295 @@
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  /* background: #10171a; */
+  /* Remove background image from body */
+  background: #fff;
+}
+
+.hero {
+  min-height: 50vh !important;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  margin-bottom: 0;
+  position: relative;
+  z-index: 1;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+.navbar {
+  background: rgba(255,255,255,0.92) !important;
+  backdrop-filter: blur(2px);
+}
+
+.navbar-brand {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 1px;
+}
+
+.btn-warning {
+  background: #ffb23f;
+  border: none;
+  color: #222;
+  
+}
+
+.btn-warning:hover {
+  background: #ff9800;
+  color: #fff;
+}
+
+.text-warning {
+  color: #ffb23f !important;
+}
+
+.bg-dark {
+  background: #10171a !important;
+}
+
+.bg-black {
+  background: #181818 !important;
+}
+
+.card {
+  border-radius: 1rem;
+}
+
+.card-footer {
+  background: none;
+  border-top: none;
+}
+
+.feature-icon {
+  color: #ffb23f;
+}
+
+input[type="email"] {
+  border-radius: 2rem;
+  padding-left: 1.5rem;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Navbar item styles */
+.navbar-nav .nav-link {
+  color: #222 !important;
+  font-weight: 600 !important;
+  font-size: 1rem !important;
+  letter-spacing: 1px !important;
+  margin: 0 10px !important; /* Closer spacing */
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* Remove right margin from last nav item */
+.navbar-nav .nav-item:last-child .nav-link {
+  margin-right: 0 !important;
+}
+
+/* Reservation button styles - orange button, dark text, large, spaced letters */
+.btn.btn-warning.fw-bold.px-3.py-2.ms-2 {
+  background: #ffb23f !important;
+  color: #222 !important;
+  font-weight: 600 !important;
+  border-radius: 12px !important;
+  border: none !important;
+  letter-spacing: 3px !important;
+  font-size: 1.1rem !important;
+  box-shadow: none !important;
+  transition: background 0.2s;
+  padding: 1.1rem 2.8rem !important;
+  height: 64px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn.btn-warning.fw-bold.px-3.py-2.ms-2:hover {
+  background: #ffd36b !important;
+  color: #222 !important;
+}
+
+/* Cart icon button styles - white, thin border, rounded, next to reservation */
+.btn.btn-outline-dark.position-relative.ms-2 {
+  background: #fff !important;
+  color: #222 !important;
+  border: 1.5px solid #222 !important;
+  border-radius: 12px !important;
+  font-size: 1.5rem !important;
+  padding: 1.1rem 1.5rem !important;
+  margin-left: 14px !important;
+  height: 64px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Vertically center the badge on the cart icon */
+.btn.btn-outline-dark.position-relative .badge {
+  top: 6px !important;
+  right: 6px !important;
+  font-size: 0.9rem !important;
+  padding: 0.3em 0.6em !important;
+}
+
+/* Testimonials slider navigation styles */
+.slider-dots {
+  display: inline-flex;
+  gap: 8px;
+}
+.slider-dots .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ccc;
+  display: inline-block;
+  transition: background 0.3s;
+}
+.slider-dots .dot.active {
+  background: #f7a313;
+  border: 2px solid #f7a313;
+}
+
+/* Counter animation (optional, for smoother look) */
+.counter {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Footer Section */
+.footer-section {
+  background: #151d1f url('../images/bg.jpg.webp') repeat;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  position: relative;
+}
+.footer-separator {
+  border-top: 2px dotted #3a4447;
+  opacity: 0.5;
+}
+.footer-section h4 {
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.footer-text {
+  color: #bfc6c9;
+  font-size: 1.08rem;
+}
+.footer-link {
+  color: #f7a313;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: color 0.2s;
+}
+.footer-link:hover {
+  color: #ffd36b;
+  text-decoration: underline;
+}
+.footer-gallery {
+  overflow: hidden;
+  width: 270px;
+  min-height: 60px;
+  position: relative;
+}
+.footer-gallery-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: box-shadow 0.2s;
+}
+.footer-gallery-img:hover {
+  box-shadow: 0 0 0 2px #f7a313;
+}
+.footer-gallery-arrows button {
+  background: none;
+  border: none;
+  color: #f7a313;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.footer-gallery-arrows button:hover {
+  color: #ffd36b;
+}
+#back-to-top {
+  position: static;
+  color: #f7a313;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+#back-to-top:hover {
+  color: #ffd36b;
+  text-decoration: underline;
+}
+@media (max-width: 991px) {
+  .footer-gallery {
+    width: 180px;
+  }
+  .footer-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .footer-section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .footer-gallery {
+    width: 120px;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero {
+    text-align: center;
+    padding: 4rem 0;
+  }
+} 
+
+.btn-shop-small {
+  font-size: 0.95rem !important;
+  padding: 0.15rem 0.7rem !important;
+  border-radius: 0.3rem !important;
+  line-height: 1.2 !important;
+} 
+
+.nav-link.active, .nav-link.active:focus, .nav-link.active:hover {
+  border-bottom: 3px solid #ffb23f !important;
+  color: #222 !important;
+  background: none !important;
+} 
+
+.breadcrumb-home-link {
+  color: #222 !important;
+  font-weight: bold;
+  text-decoration: none !important;
+  transition: color 0.2s;
+}
+.breadcrumb-home-link:hover {
+  color: #000 !important;
+  text-decoration: underline !important;
+} 
+
+.floating-btn-group {
+  position: fixed !important;
+  top: 50% !important;
+  right: 0 !important;
+  transform: translateY(-50%) !important;
+  z-index: 1050 !important;
+}
+.slider-dots .dot.active {
+  background: #f7a313 !important;
+  border: 2px solid #f7a313 !important;
+} 

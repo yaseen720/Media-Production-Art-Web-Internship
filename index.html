@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tastyc - Food & Drinks</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    body {
+      background: url('images/home bg.webp') center center/cover no-repeat !important;
+      background-attachment: fixed;
+    }
+    .navbar-nav .nav-link {
+      font-size: 13px !important;
+      color: #222 !important;
+      margin: 0 10px !important;
+      letter-spacing: 1px;
+      padding-left: 0.4rem !important;
+      padding-right: 0.1rem !important;
+    }
+    .navbar-nav .nav-item {
+      margin-right: 10px;
+    }
+    .navbar-nav .dropdown-menu {
+      background: #ffb23f !important;
+      border: none;
+    }
+    .navbar-nav .dropdown-menu .dropdown-item {
+      font-size: 0.8rem !important;
+      color: #222 !important;
+      background: #ffb23f !important;
+    }
+    .navbar-nav .dropdown-menu .dropdown-item:hover {
+      background: #ffd36b !important;
+      color: #222 !important;
+    }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('.navbar .dropdown').forEach(function(dropdown) {
+        dropdown.addEventListener('mouseenter', function() {
+          let menu = this.querySelector('.dropdown-menu');
+          if(menu) menu.classList.add('show');
+        });
+        dropdown.addEventListener('mouseleave', function() {
+          let menu = this.querySelector('.dropdown-menu');
+          if(menu) menu.classList.remove('show');
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+  <!-- Header/Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-2 fixed-top rounded-4 mx-3 mt-3 w-100" style="z-index:1040; top: 0; left: 0; right: 0; max-width: calc(100vw - 2rem); margin-left: auto; margin-right: auto; background: #fff !important;">
+    <div class="container-fluid px-4">
+      <a class="navbar-brand d-flex flex-column align-items-start" href="index.html" style="line-height:1;">
+        <img src="images/logo.png" alt="Tastye Logo" style="height:48px; width:auto;">
+        <span class="fs-6 text-muted" style="margin-top:-0.3rem; letter-spacing:2px; font-size:0.85rem;"></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <!-- Home Dropdown (already present) -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active position-relative" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="border-bottom: 3px solid #ffb23f;">HOME</a>
+            <ul class="dropdown-menu" aria-labelledby="homeDropdown">
+              <li><a class="dropdown-item" href="index.html">HOME SLIDER</a></li>
+              <li><a class="dropdown-item" href="index.html">HOME IMAGE</a></li>
+              <li><a class="dropdown-item" href="index.html">HOME VIDEO</a></li>
+            </ul>
+          </li>
+          <!-- About Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#about" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              ABOUT
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+              <li><a class="dropdown-item" href="about-me.html">ABOUT ME</a></li>
+              <li><a class="dropdown-item" href="#">ABOUT US</a></li>
+            </ul>
+          </li>
+          <!-- Menu Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#menu" id="menuDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              MENU
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="menuDropdown">
+              <li><a class="dropdown-item" href="#">MENU TABS (WOOCOMMERCE)</a></li>
+              <li><a class="dropdown-item" href="#">MENU LIST (WOoCOMMERCE)</a></li>
+              <li><a class="dropdown-item" href="#">MENU TABS</a></li>
+              <li><a class="dropdown-item" href="#">MENU LIST</a></li>
+            </ul>
+          </li>
+          <!-- Order Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#order" id="orderDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              ORDER
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="orderDropdown">
+              <li><a class="dropdown-item" href="#">RESERVATION (BOKKING CALENDER)</a></li>
+              <li><a class="dropdown-item" href="#">RESERVATION (CONTACT FORM 7)</a></li>
+              <li><a class="dropdown-item" href="#">RESERVATION (OPENTABLE)</a></li>
+              <li><a class="dropdown-item" href="#">RESERVATION POP UP</a></li>
+            </ul>
+          </li>
+          <!-- Pages Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#pages" id="pagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              PAGES
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+              <li><a class="dropdown-item" href="#">GALLERY</a></li>
+              <li><a class="dropdown-item" href="#">HISTORY</a></li>
+              <li><a class="dropdown-item" href="#">FEATURES</a></li>
+              <li><a class="dropdown-item" href="#">PRICING</a></li>
+              <li><a class="dropdown-item" href="#">OUR CHEFS</a></li>
+              <li><a class="dropdown-item" href="#">FAQ</a></li>
+              <li><a class="dropdown-item" href="#">TESTIMONIALS</a></li>
+              <li><a class="dropdown-item" href="#">404 PAGE</a></li>
+            </ul>
+          </li>
+          <!-- Blog Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#blog" id="blogDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              BLOG
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="blogDropdown">
+              <li><a class="dropdown-item" href="blog-list.html">BLOG LIST</a></li>
+              <li><a class="dropdown-item" href="blog-post.html">BLOG POST</a></li>
+          
+            </ul>
+          </li>
+          <!-- Contact (no dropdown) -->
+          <li class="nav-item"><a class="nav-link" href="contact.html" id="contactNav">CONTACT</a></li>
+          <!-- Shop Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#shop" id="shopDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              SHOP
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="shopDropdown">
+              <li><a class="dropdown-item" href="#">PRODUCT LIST</a></li>
+              <li><a class="dropdown-item" href="#">SINGLE PRODUCT</a></li>
+              <li><a class="dropdown-item" href="#">CART</a></li>
+              <li><a class="dropdown-item" href="#">CHECKOUT</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center gap-2 ms-auto">
+          <a href="#reservation" class="btn btn-warning fw-bold px-5 py-2 ms-2" style="font-size: 0.8rem;">RESERVATION</a>
+          <a href="#cart" class="btn btn-outline-dark position-relative ms-6">
+            <i class="bi bi-bag"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">0</span>
+          </a>
+          
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sliders/Carousels for Dropdowns (hidden by default, shown on click) -->
+  <div id="dropdownSliders" style="margin-top:120px;">
+    <!-- About Sliders -->
+    <div id="aboutMeSlider" class="dropdown-slider d-none">
+      <section class="py-5 position-relative" style="background: url('images/reserved.jpeg') center/cover no-repeat; min-height: 40vh;">
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(16, 23, 26, 0.7); z-index:1;"></div>
+        <div class="container position-relative" style="z-index:2;">
+          <div class="row align-items-center">
+            <div class="col-lg-6 text-white ps-lg-5 d-flex flex-column justify-content-center" style="min-height:30vh;">
+              <span class="fw-bold text-uppercase mb-3" style="color: #ffb23f; letter-spacing:2px;">Reservation</span>
+              <h1 class="display-2 fw-bold mb-4" style="color: #fff;">This evening<br>will be great!</h1>
+              <p class="lead mb-4" style="color: #d3d3d3;">Quaerat debitis, vel, sapiente dicta sequi labore porro pariatur harum expedita.</p>
+              <div class="d-flex align-items-center gap-3">
+                <a href="#reservation" class="btn btn-warning fw-bold px-5 py-3" style="font-size: 2rem;">Reservation</a>
+                <a href="#contact" class="btn btn-link text-white fw-bold px-0" style="text-decoration:none; font-size:1.3rem;">Get in touch</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="aboutUsSlider" class="dropdown-slider d-none">
+      <section class="py-5 position-relative" style="background: url('images/gallery-i-1.jpg') center/cover no-repeat; min-height: 40vh;">
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(16, 23, 26, 0.7); z-index:1;"></div>
+        <div class="container position-relative" style="z-index:2;">
+          <div id="aboutUsCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Menu Sliders -->
+    <div id="menuSlider1" class="dropdown-slider d-none">
+      <section class="py-5 position-relative" style="background: url('images/gallery-i-3.jpg') center/cover no-repeat; min-height: 40vh;">
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(16, 23, 26, 0.7); z-index:1;"></div>
+        <div class="container position-relative" style="z-index:2;">
+          <div id="menuCarousel1" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h2 class="fw-bold display-2 mb-3 text-white">Starters</h2>
+                <p class="lead mb-4 text-white">This is the Starters slider content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="menuSlider2" class="dropdown-slider d-none">
+      <section class="py-5 position-relative" style="background: url('images/gallery-i-4.jpg') center/cover no-repeat; min-height: 40vh;">
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(16, 23, 26, 0.7); z-index:1;"></div>
+        <div class="container position-relative" style="z-index:2;">
+          <div id="menuCarousel2" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h2 class="fw-bold display-2 mb-3 text-white">Main Course</h2>
+                <p class="lead mb-4 text-white">This is the Main Course slider content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="menuSlider3" class="dropdown-slider d-none">
+      <section class="py-5 position-relative" style="background: url('images/gallery-i-6.jpg') center/cover no-repeat; min-height: 40vh;">
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(16, 23, 26, 0.7); z-index:1;"></div>
+        <div class="container position-relative" style="z-index:2;">
+          <div id="menuCarousel3" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h2 class="fw-bold display-2 mb-3 text-white">Desserts</h2>
+                <p class="lead mb-4 text-white">This is the Desserts slider content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="menuSlider4" class="dropdown-slider d-none">
+      <section class="py-5 position-relative" style="background: url('images/gallery-i-1.jpg') center/cover no-repeat; min-height: 40vh;">
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(16, 23, 26, 0.7); z-index:1;"></div>
+        <div class="container position-relative" style="z-index:2;">
+          <div id="menuCarousel4" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h2 class="fw-bold display-2 mb-3 text-white">Drinks</h2>
+                <p class="lead mb-4 text-white">This is the Drinks slider content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Order Sliders -->
+    <div id="orderSlider1" class="dropdown-slider d-none">
+      <section class="py-5 position-relative" style="background: url('images/deserts.jpeg') center/cover no-repeat; min-height: 40vh;">
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(16, 23, 26, 0.7); z-index:1;"></div>
+        <div class="container position-relative" style="z-index:2;">
+          <div id="orderCarousel1" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h2 class="fw-bold display-2 mb-3 text-white">Express Order</h2>
+                <p class="lead mb-4 text-white">This is the Express Order slider content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="orderSlider2" class="dropdown-slider d-none">
+      <section class="py-5 position-relative" style="background: url('images/pancakes.jpeg') center/cover no-repeat; min-height: 40vh;">
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(16, 23, 26, 0.7); z-index:1;"></div>
+        <div class="container position-relative" style="z-index:2;">
+          <div id="orderCarousel2" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h2 class="fw-bold display-2 mb-3 text-white">Bulk Order</h2>
+                <p class="lead mb-4 text-white">This is the Bulk Order slider content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="orderSlider3" class="dropdown-slider d-none">
+      <section class="py-5 position-relative" style="background: url('images/simgleburger.jpeg') center/cover no-repeat; min-height: 40vh;">
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(16, 23, 26, 0.7); z-index:1;"></div>
+        <div class="container position-relative" style="z-index:2;">
+          <div id="orderCarousel3" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h2 class="fw-bold display-2 mb-3 text-white">Scheduled Order</h2>
+                <p class="lead mb-4 text-white">This is the Scheduled Order slider content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="orderSlider4" class="dropdown-slider d-none">
+      <section class="py-5 position-relative" style="background: url('images/gallery-i-6.jpg') center/cover no-repeat; min-height: 40vh;">
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(16, 23, 26, 0.7); z-index:1;"></div>
+        <div class="container position-relative" style="z-index:2;">
+          <div id="orderCarousel4" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h2 class="fw-bold display-2 mb-3 text-white">Special Order</h2>
+                <p class="lead mb-4 text-white">This is the Special Order slider content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Pages Sliders -->
+    <div id="pagesSlider1" class="dropdown-slider d-none">
+      <section class="py-5 position-relative" style="background: url('images/gallery-i-3.jpg') center/cover no-repeat; min-height: 40vh;">
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(16, 23, 26, 0.7); z-index:1;"></div>
+        <div class="container position-relative" style="z-index:2;">
+          <div id="pagesCarousel1" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h2 class="fw-bold display-2 mb-3 text-white">Gallery</h2>
+                <p class="lead mb-4 text-white">This is the Gallery slider content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="pagesSlider2" class="dropdown-slider d-none">
+      <section class="py-5 position-relative" style="background: url('images/gallery-i-4.jpg') center/cover no-repeat; min-height: 40vh;">
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(16, 23, 26, 0.7); z-index:1;"></div>
+        <div class="container position-relative" style="z-index:2;">
+          <div id="pagesCarousel2" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h2 class="fw-bold display-2 mb-3 text-white">Events</h2>
+                <p class="lead mb-4 text-white">This is the Events slider content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="pagesSlider3" class="dropdown-slider d-none">
+      <section class="py-5 position-relative" style="background: url('images/gallery-i-6.jpg') center/cover no-repeat; min-height: 40vh;">
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(16, 23, 26, 0.7); z-index:1;"></div>
+        <div class="container position-relative" style="z-index:2;">
+          <div id="pagesCarousel3" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h2 class="fw-bold display-2 mb-3 text-white">Team</h2>
+                <p class="lead mb-4 text-white">This is the Team slider content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="pagesSlider4" class="dropdown-slider d-none">
+      <section class="py-5 position-relative" style="background: url('images/gallery-i-1.jpg') center/cover no-repeat; min-height: 40vh;">
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(16, 23, 26, 0.7); z-index:1;"></div>
+        <div class="container position-relative" style="z-index:2;">
+          <div id="pagesCarousel4" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h2 class="fw-bold display-2 mb-3 text-white">FAQ</h2>
+                <p class="lead mb-4 text-white">This is the FAQ slider content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Blog Sliders -->
+    <div id="blogSlider1" class="dropdown-slider d-none">
+      <section class="py-5 position-relative" style="background: url('images/gallery-i-3.jpg') center/cover no-repeat; min-height: 40vh;">
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(16, 23, 26, 0.7); z-index:1;"></div>
+        <div class="container position-relative" style="z-index:2;">
+          <div id="blogCarousel1" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h2 class="fw-bold display-2 mb-3 text-white">Latest News</h2>
+                <p class="lead mb-4 text-white">This is the Latest News slider content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="blogSlider2" class="dropdown-slider d-none">
+      <section class="py-5 position-relative" style="background: url('images/gallery-i-4.jpg') center/cover no-repeat; min-height: 40vh;">
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(16, 23, 26, 0.7); z-index:1;"></div>
+        <div class="container position-relative" style="z-index:2;">
+          <div id="blogCarousel2" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h2 class="fw-bold display-2 mb-3 text-white">Tips & Tricks</h2>
+                <p class="lead mb-4 text-white">This is the Tips & Tricks slider content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="blogSlider3" class="dropdown-slider d-none">
+      <section class="py-5 position-relative" style="background: url('images/gallery-i-6.jpg') center/cover no-repeat; min-height: 40vh;">
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(16, 23, 26, 0.7); z-index:1;"></div>
+        <div class="container position-relative" style="z-index:2;">
+          <div id="blogCarousel3" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h2 class="fw-bold display-2 mb-3 text-white">Chef Stories</h2>
+                <p class="lead mb-4 text-white">This is the Chef Stories slider content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="blogSlider4" class="dropdown-slider d-none">
+      <section class="py-5 position-relative" style="background: url('images/gallery-i-1.jpg') center/cover no-repeat; min-height: 40vh;">
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(16, 23, 26, 0.7); z-index:1;"></div>
+        <div class="container position-relative" style="z-index:2;">
+          <div id="blogCarousel4" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h2 class="fw-bold display-2 mb-3 text-white">Customer Reviews</h2>
+                <p class="lead mb-4 text-white">This is the Customer Reviews slider content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Shop Sliders -->
+    <div id="shopSlider1" class="dropdown-slider d-none">
+      <section class="py-5 position-relative" style="background: url('images/gallery-i-3.jpg') center/cover no-repeat; min-height: 40vh;">
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(16, 23, 26, 0.7); z-index:1;"></div>
+        <div class="container position-relative" style="z-index:2;">
+          <div id="shopCarousel1" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h2 class="fw-bold display-2 mb-3 text-white">Gift Cards</h2>
+                <p class="lead mb-4 text-white">This is the Gift Cards slider content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="shopSlider2" class="dropdown-slider d-none">
+      <section class="py-5 position-relative" style="background: url('images/gallery-i-4.jpg') center/cover no-repeat; min-height: 40vh;">
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(16, 23, 26, 0.7); z-index:1;"></div>
+        <div class="container position-relative" style="z-index:2;">
+          <div id="shopCarousel2" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h2 class="fw-bold display-2 mb-3 text-white">Merchandise</h2>
+                <p class="lead mb-4 text-white">This is the Merchandise slider content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="shopSlider3" class="dropdown-slider d-none">
+      <section class="py-5 position-relative" style="background: url('images/gallery-i-6.jpg') center/cover no-repeat; min-height: 40vh;">
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(16, 23, 26, 0.7); z-index:1;"></div>
+        <div class="container position-relative" style="z-index:2;">
+          <div id="shopCarousel3" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h2 class="fw-bold display-2 mb-3 text-white">Special Offers</h2>
+                <p class="lead mb-4 text-white">This is the Special Offers slider content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="shopSlider4" class="dropdown-slider d-none">
+      <section class="py-5 position-relative" style="background: url('images/gallery-i-1.jpg') center/cover no-repeat; min-height: 40vh;">
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(16, 23, 26, 0.7); z-index:1;"></div>
+        <div class="container position-relative" style="z-index:2;">
+          <div id="shopCarousel4" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h2 class="fw-bold display-2 mb-3 text-white">Membership</h2>
+                <p class="lead mb-4 text-white">This is the Membership slider content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script>
+    // Hide all sliders
+    function hideAllSliders() {
+      document.querySelectorAll('.dropdown-slider').forEach(function(el) {
+        el.classList.add('d-none');
+      });
+    }
+    // Show the selected slider
+    function showSlider(id) {
+      hideAllSliders();
+      var el = document.getElementById(id);
+      if (el) el.classList.remove('d-none');
+      // Scroll to the slider
+      window.scrollTo({ top: document.getElementById('dropdownSliders').offsetTop - 80, behavior: 'smooth' });
+    }
+  </script>
+  <br><br>
+
+  <!-- Hero Section -->
+  <section class="hero d-flex align-items-center position-relative" style="min-height: 180vh; width: 100vw; margin-left: calc(-50vw + 50%); margin-right: calc(-50vw + 50%); margin-bottom: 100px; background: url('images/home bg.webp') center center/cover no-repeat;" id="hero-section">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-lg-6 text-white ps-lg-5 d-flex flex-column justify-content-center" style="z-index:2; min-height:80vh;">
+          <span class="fw-bold text-uppercase mb-3" style="color: #ffb23f; letter-spacing:2px;">Hello, new friend!</span>
+          <h1 id="hero-heading" class="display-1 fw-bold mb-4" style="color: #fff; font-size:4rem;">Welcome Back<br>To Tastye</h1>
+          <div id="shop-btn-wrapper" class="w-100 d-flex justify-content-center" style="display:none;"></div>
+          <p id="hero-subtext" class="lead mb-4" style="color: #d3d3d3;">Quaerat debitis, vel, sapiente dicta sequi labore porro pariatur harum expedita.</p>
+          <div id="hero-btns" class="d-flex align-items-center gap-2">
+            <a href="#reservation" class="btn btn-warning fw-bold px-6 py-3" style="font-size: 2rem;">Reservation</a>
+            <p class="btn-shop-small = btn btn-outline-light fw-bold px-1 py-1" style="font-size: 1rem;">Online Shop</p>
+          </div>
+        </div>
+        <!-- No right image column, just background image now -->
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section (after Hero) -->
+  <section class="py-5 bg-white">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Image with Play Button -->
+        <div class="col-lg-6 mb-4 mb-lg-0 position-relative">
+          <div class="video-thumbnail position-relative rounded shadow overflow-hidden" style="background: #fff;">
+            <img src="https://img.youtube.com/vi/54eHmcri6b4/hqdefault.jpg" alt="About Us Video" class="img-fluid rounded" style="width:100%; height:auto;">
+            <button type="button" class="btn btn-warning rounded-circle position-absolute top-50 start-50 translate-middle" style="width:72px; height:72px;">
+              <i class="bi bi-play-fill fs-1"></i>
+            </button>
+          </div>
+        </div>
+        <!-- Text Content -->
+        <div class="col-lg-6">
+          <span class="text-warning fw-bold text-uppercase mb-2" style="border-left: 4px solid #ffb23f; padding-left: 12px; letter-spacing:2px;">About Us</span>
+          <h2 class="fw-bold display-4 mb-3" style="color: #222;">We invite you to<br>visit our restaurant</h2>
+          <p class="mb-4" style="color: #888; font-size:1.1rem;">Assumenda possimus eaque illo iste, autem. Porro eveniet, autem ipsam vitae amet repellat repudiandae tenetur, quod corrupti consectetur cum? Repudiandae dignissimos fugiat sit nam.<br>Tempore aspernatur quae repudiandae dolorem, beatae dolorum, praesentium itaque et quam quaerat. Cumque, consequatur!</p>
+          <div class="d-flex align-items-center gap-3">
+            <a href="#" class="btn btn-warning fw-bold px-4 py-2" style="font-size:1.1rem;">Read More</a>
+            <div class="ms-3">
+              <a href="#" class="text-dark me-2" aria-label="Facebook"><i class="bi bi-facebook fs-4"></i></a>
+              <a href="#" class="text-dark me-2" aria-label="Instagram"><i class="bi bi-instagram fs-4"></i></a>
+              <a href="#" class="text-dark me-2" aria-label="Twitter"><i class="bi bi-twitter fs-4"></i></a>
+              <a href="#" class="text-dark" aria-label="YouTube"><i class="bi bi-youtube fs-4"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Modal -->
+  <div class="modal fade" id="aboutVideoModal" tabindex="-1" aria-labelledby="aboutVideoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-dark">
+        <div class="modal-body p-0 position-relative">
+          <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="ratio ratio-16x9">
+            <iframe id="aboutVideoIframe" src="" title="YouTube video" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Features -->
+  <section class="py-5 bg-light">
+    <div class="container text-center">
+      <span class="text-warning fw-bold text-uppercase">Features</span>
+      <h2 class="fw-bold display-5 mb-4">Why people choose us?</h2>
+      <p class="mb-5">Porro eveniet, autem ipsam vitae consequatur!</p>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="feature-icon mb-3"><i class="bi bi-egg-fried fs-1"></i></div>
+          <h5 class="fw-bold">Menu for every taste</h5>
+          <p>Dolor sit amet, consectetur adipisicing elit et molestias possimus</p>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-icon mb-3"><i class="bi bi-basket2 fs-1"></i></div>
+          <h5 class="fw-bold">Always fresh ingredients</h5>
+          <p>Assumenda possimus eaque illo iste, autem. Porro eveniet autem</p>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-icon mb-3"><i class="bi bi-emoji-smile fs-1"></i></div>
+          <h5 class="fw-bold">Experienced chefs</h5>
+          <p>Rolorem, beatae dolorum, praesentium itaque et quam quaerat</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Working Hours -->
+  <section class="py-5 bg-white">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <!-- Left: Background image with overlay and text -->
+        <div class="col-lg-7 mb-4 mb-lg-0">
+          <div class="position-relative rounded shadow overflow-hidden" style="min-height:340px;">
+            <img src="images/pizza.jpeg" alt="Working Hours" class="img-fluid w-100 h-100 position-absolute top-0 start-0" style="object-fit:cover; min-height:340px; filter:brightness(0.6);">
+            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-start p-5" style="z-index:2;">
+              <span class="text-warning fw-bold text-uppercase mb-2" style="letter-spacing:1px;"><span style="border-bottom:3px solid #ffb23f; padding-right:8px; margin-right:8px;"></span>About Us</span>
+              <h2 class="fw-bold display-4 text-white mb-2">Working hours</h2>
+              <p class="text-white mb-4">Rolorem, beatae dolorum, praesentium itaque et quam quaerat.</p>
+              <div class="d-flex gap-3">
+                <a href="#reservation" class="btn btn-warning fw-bold px-4">Reservation</a>
+                <a href="#contact" class="btn btn-link text-white fw-bold px-0" style="text-decoration:none;">Contact us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Right: White card with times -->
+        <div class="col-lg-5 d-flex justify-content-center">
+          <div class="bg-white rounded shadow p-4" style="min-width:270px;">
+            <div class="mb-4 text-center">
+              <span class="fw-bold text-uppercase small" style="letter-spacing:1px;">Sunday to Tuesday</span>
+              <div class="fs-3 fw-bold mt-2 mb-1">
+                09 <span class="text-warning">:</span> 00
+              </div>
+              <div class="fs-3 fw-bold mb-3">
+                22 <span class="text-warning">:</span> 00
+              </div>
+            </div>
+            <div class="text-center">
+              <span class="fw-bold text-uppercase small" style="letter-spacing:1px;">Friday to Saturday</span>
+              <div class="fs-3 fw-bold mt-2 mb-1">
+                11 <span class="text-warning">:</span> 00
+              </div>
+              <div class="fs-3 fw-bold">
+                19 <span class="text-warning">:</span> 00
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats/Counters -->
+  <section class="py-5 bg-light">
+    <div class="container text-center">
+      <div class="row g-4">
+        <div class="col-md-3">
+          <h2 class="fw-bold"><span class="counter" data-target="200">0</span> <span class="text-warning">+</span></h2>
+          <p class="text-uppercase">Visitors daily</p>
+        </div>
+        <div class="col-md-3">
+          <h2 class="fw-bold"><span class="counter" data-target="400">0</span> <span class="text-warning">+</span></h2>
+          <p class="text-uppercase">Deliveries monthly</p>
+        </div>
+        <div class="col-md-3">
+          <h2 class="fw-bold"><span class="counter" data-target="100">0</span> <span class="text-warning">%</span></h2>
+          <p class="text-uppercase">Positive feedback</p>
+        </div>
+        <div class="col-md-3">
+          <h2 class="fw-bold"><span class="counter" data-target="40">0</span> <span class="text-warning">+</span></h2>
+          <p class="text-uppercase">Awards and honors</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mobile App Promo -->
+  <section class="py-5 bg-dark text-white">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <span class="text-warning fw-bold text-uppercase">Mobile Application</span>
+          <h2 class="fw-bold display-5">Download our application</h2>
+          <p class="lead">Quaerat debitis, vel, sapiente dicta sequi labore porro pariatur harum expedita.</p>
+          <a href="#" class="btn btn-warning fw-bold me-2"><i class="bi bi-apple"></i> Appstore</a>
+          <a href="#" class="btn btn-warning fw-bold"><i class="bi bi-google-play"></i> Playmarket</a>
+        </div>
+        <div class="col-lg-6 d-none d-lg-block">
+          <img src="images/burger-950x962.png" alt="Mobile App" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-5 bg-white">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="text-warning fw-bold text-uppercase">Testimonials</span>
+        <h2 class="fw-bold display-5">What Our visitors say</h2>
+        <p>Porro eveniet, autem ipsam corrupti consectetur cum. Repudiandae dignissimos fugiat sit nam.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="fw-bold">The best restaurant!</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, eligendi dolorem? Voluptates rem magnam nesciunt ullam hic error sed, minus, accusantium inventore ex reprehenderit ipsum aperiam libero ut, laudantium delectus deleniti debitis quas dolore quos. Accusamus ea saepe, veniam. Nemo.</p>
+            </div>
+            <div class="card-footer bg-white border-0 d-flex align-items-center">
+              <img src="images/face1.jpeg" alt="Oscar Oldman" class="rounded-circle me-2" width="40" height="40">
+              <div>
+                <div class="fw-bold">Oscar Oldman</div>
+                <small class="text-muted">02.02.21</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="fw-bold">It was very delicious!</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, eligendi dolorem? Voluptates rem magnam nesciunt ullam hic error sed, minus, accusantium inventore ex reprehenderit ipsum aperiam libero ut, laudantium delectus deleniti debitis quas dolore quos. Accusamus ea saepe, veniam. Nemo.</p>
+            </div>
+            <div class="card-footer bg-white border-0 d-flex align-items-center">
+              <img src="images/face2.jpeg" alt="Emma Newman" class="rounded-circle me-2" width="40" height="40">
+              <div>
+                <div class="fw-bold">Emma Newman</div>
+                <small class="text-muted">02.02.21</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="fw-bold">I'm delighted!</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, eligendi dolorem? Voluptates rem magnam nesciunt ullam hic error sed, minus, accusantium inventore ex reprehenderit ipsum aperiam libero ut, laudantium delectus deleniti debitis quas dolore quos. Accusamus ea saepe, veniam. Nemo.</p>
+            </div>
+            <div class="card-footer bg-white border-0 d-flex align-items-center">
+              <img src="images/face3.jpeg" alt="Viktoria Freeman" class="rounded-circle me-2" width="40" height="40">
+              <div>
+                <div class="fw-bold">Viktoria Freeman</div>
+                <small class="text-muted">02.02.21</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-between align-items-center mt-5">
+        <a href="#moreaboutus" class="btn btn-warning btn-lg fw-bold" style="min-width:200px; font-size:1.1rem;">More about us</a>
+        <div class="d-flex align-items-center gap-3">
+          <div class="slider-dots">
+            <span class="dot active" style="background:#f7a313;"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <span class="text-uppercase fw-bold mx-3" style="letter-spacing:2px; font-size:1rem; color:#222;">Slider Navigation</span>
+          <button class="btn btn-warning rounded-circle mx-1" style="width:40px; height:40px;"><i class="bi bi-arrow-left"></i></button>
+          <button class="btn btn-warning rounded-circle mx-1" style="width:40px; height:40px;"><i class="bi bi-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter/Recipes -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="text-warning fw-bold text-uppercase">Newsletter</span>
+        <h2 class="fw-bold display-5">Use the tips and recipes of our chefs</h2>
+        <p>Porro eveniet, autem ipsam corrupti consectetur cum. Repudiandae dignissimos fugiat sit nam.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="images/deserts.jpeg" class="card-img-top" alt="Business Breakfast">
+            <div class="card-body">
+              <span class="badge bg-warning text-dark mb-2">Deserts, Salads</span>
+              <h5 class="fw-bold">Business Breakfast</h5>
+              <p>Consectetur adipisicing elit. Soluta, impedit, saepe. Unde minima distinctio officiis amet temporibus, consequuntur dolorem dicta… <a href="#" class="text-warning fw-bold">Read more</a></p>
+            </div>
+            <div class="card-footer bg-white border-0 d-flex align-items-center">
+              <img src="images/emptyprofile.jpeg" alt="Oleksandr" class="rounded-circle me-2" width="32" height="32">
+              <div>
+                <div class="fw-bold">Oleksandr</div>
+                <small class="text-muted">May 1, 2021</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="images/pancakes.jpeg" class="card-img-top" alt="Pancakes in Chocolate">
+            <div class="card-body">
+              <span class="badge bg-warning text-dark mb-2">Deserts</span>
+              <h5 class="fw-bold">Pancakes in Chocolate</h5>
+              <p>Consectetur adipisicing elit. Soluta, impedit, saepe. Unde minima distinctio officiis amet temporibus, consequuntur dolorem dicta… <a href="#" class="text-warning fw-bold">Read more</a></p>
+            </div>
+            <div class="card-footer bg-white border-0 d-flex align-items-center">
+              <img src="images/emptyprofile.jpeg" alt="Oleksandr" class="rounded-circle me-2" width="32" height="32">
+              <div>
+                <div class="fw-bold">Oleksandr</div>
+                <small class="text-muted">May 1, 2021</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="images/simgleburger.jpeg" class="card-img-top" alt="Tuna & Tomatoes">
+            <div class="card-body">
+              <span class="badge bg-warning text-dark mb-2">Deserts</span>
+              <h5 class="fw-bold">Tuna & Tomatoes</h5>
+              <p>Consectetur adipisicing elit. Soluta, impedit, saepe. Unde minima distinctio officiis amet temporibus, consequuntur dolorem dicta… <a href="#" class="text-warning fw-bold">Read more</a></p>
+            </div>
+            <div class="card-footer bg-white border-0 d-flex align-items-center">
+              <img src="images/emptyprofile.jpeg" alt="Oleksandr" class="rounded-circle me-2" width="32" height="32">
+              <div>
+                <div class="fw-bold">Oleksandr</div>
+                <small class="text-muted">May 1, 2021</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <p>
+            Read the news of our restaurant, recipes for delicious fears, tips for your home kitchen in our blog</p>
+        <a href="#" class="btn btn-warning fw-bold">All Publications</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Subscribe -->
+  <section class="py-5 newsletter-bg text-white position-relative" style="background: url('images/gallery-i-6.jpg') center/cover no-repeat; min-height: 350px;">
+    <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(16, 23, 26, 0.7); z-index:1;"></div>
+    <div class="container position-relative" style="z-index:2;">
+      <div class="row align-items-center">
+        <div class="col-lg-8 mx-auto text-center">
+          <span class="text-warning fw-bold text-uppercase">Newsletter</span>
+          <h2 class="fw-bold display-5">Subscribe our newsletter</h2>
+          <p>Rolorem, beatae dolorum, praesentium itaque et quam quaerat.</p>
+          <form class="d-flex justify-content-center mt-4">
+            <input type="email" class="form-control w-50 me-2" placeholder="Enter your email here">
+            <button class="btn btn-warning fw-bold" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-section py-5 position-relative" style="background: #151d1f;">
+    <div class="container">
+      <hr class="footer-separator mb-5" style="border-top: 2px dotted #3a4447; opacity: 0.5;">
+      <div class="row align-items-start pb-4">
+        <!-- About us -->
+        <div class="col-md-4 mb-4 mb-md-0">
+          <h4 class="fw-bold text-white mb-3">About us</h4>
+          <p class="footer-text mb-4" style="color: #bfc6c9;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita repudiandae neque illum aspernatur fugiat maiores id magni, modi, quaerat vitae. Consectetur adipisicing elit.</p>
+          <a href="#" class="footer-link text-warning fw-bold">READ MORE</a>
+        </div>
+        <!-- Contact info -->
+        <div class="col-md-4 mb-4 mb-md-0">
+          <h4 class="fw-bold text-white mb-3">Contact info</h4>
+          <ul class="list-unstyled mb-4" style="color: #bfc6c9;">
+            <li class="mb-2"><span class="fw-bold text-uppercase" style="color:#fff; letter-spacing:1px;">Call :</span> <span class="ms-2">+76 (094) 754 43 71</span></li>
+            <li class="mb-2"><span class="fw-bold text-uppercase" style="color:#fff; letter-spacing:1px;">Write :</span> <span class="ms-2">your.email.inbox@here.com</span></li>
+            <li class="mb-2"><span class="fw-bold text-uppercase" style="color:#fff; letter-spacing:1px;">Find us :</span> <span class="ms-2">Canada, Toronto, Avenue 31B,</span></li>
+          </ul>
+          <a href="#" class="footer-link text-warning fw-bold">READ MORE</a>
+        </div>
+        <!-- Gallery -->
+        <div class="col-md-4">
+          <h4 class="fw-bold text-white mb-3">Gallery</h4>
+          <div class="footer-gallery d-flex align-items-center gap-2 mb-2" id="footer-gallery">
+            <img src="images/gallery-i-3.jpg" alt="Gallery 1" class="footer-gallery-img img-fluid rounded" width="60" height="60">
+            <img src="images/gallery-i-4.jpg" alt="Gallery 2" class="footer-gallery-img img-fluid rounded" width="60" height="60">
+            <img src="images/pizza.jpeg" alt="Gallery 3" class="footer-gallery-img img-fluid rounded" width="60" height="60">
+            <img src="images/gallery-i-6.jpg" alt="Gallery 4" class="footer-gallery-img img-fluid rounded" width="60" height="60">
+            <img src="images/deserts.jpeg" alt="Gallery 5" class="footer-gallery-img img-fluid rounded" width="60" height="60">
+            <img src="images/pancakes.jpeg" alt="Gallery 6" class="footer-gallery-img img-fluid rounded" width="60" height="60">
+          </div>
+          <div class="d-flex align-items-center justify-content-between">
+            <a href="#" class="footer-link text-warning fw-bold">SEE MORE</a>
+            <div class="footer-gallery-arrows d-flex align-items-center gap-2">
+              <button class="btn btn-link p-0 text-warning" id="footer-gallery-prev" aria-label="Previous"><i class="bi bi-arrow-left fs-4"></i></button>
+              <button class="btn btn-link p-0 text-warning" id="footer-gallery-next" aria-label="Next"><i class="bi bi-arrow-right fs-4"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-between align-items-center mt-5 pt-4 border-0">
+        <small class="text-light">&copy; Tastyc 2024 . All rights reserved. Design by <a href="#" class="text-warning fw-bold" style="text-decoration:none;">bslthemes Team</a></small>
+        <a href="#top" id="back-to-top" class="footer-link text-warning fw-bold" style="letter-spacing:2px; font-size:1.1rem;">BACK TO TOP</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Right Button Group -->
+  <div class="floating-btn-group position-fixed d-flex flex-column align-items-center" style="top: 50%; right: 0; transform: translateY(-50%); z-index: 1050;">
+    <button class="btn btn-light border mb-1" style="width:48px; height:48px;"><i class="bi bi-eye-slash fs-4"></i></button>
+    <button class="btn btn-light border mb-1" style="width:48px; height:48px;"><i class="bi bi-life-preserver fs-4"></i></button>
+    <button class="btn btn-light border mb-1" style="width:48px; height:48px;"><i class="bi bi-cart fs-4"></i></button>
+    <button class="btn btn-light border" style="width:48px; height:48px;"><i class="bi bi-grid-3x3-gap fs-4"></i></button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html> 

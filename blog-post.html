@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Breakfast - Blog Post - Tastyc</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Header/Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-2 fixed-top rounded-4 mx-3 mt-3 w-100" style="z-index:1040; top: 0; left: 0; right: 0; max-width: calc(100vw - 2rem); margin-left: auto; margin-right: auto; background: #fff !important;">
+    <div class="container-fluid px-4">
+      <a class="navbar-brand d-flex flex-column align-items-start" href="index.html" style="line-height:1;">
+        <img src="images/logo.png" alt="Tastye Logo" style="height:48px; width:auto;">
+        <span class="fs-6 text-muted" style="margin-top:-0.3rem; letter-spacing:2px; font-size:0.85rem;"></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">HOME</a>
+            <ul class="dropdown-menu" aria-labelledby="homeDropdown">
+              <li><a class="dropdown-item" href="index.html">HOME SLIDER</a></li>
+              <li><a class="dropdown-item" href="index.html">HOME IMAGE</a></li>
+              <li><a class="dropdown-item" href="index.html">HOME VIDEO</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#about" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">ABOUT</a>
+            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+              <li><a class="dropdown-item" href="about-me.html">ABOUT ME</a></li>
+              <li><a class="dropdown-item" href="#">ABOUT US</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#menu" id="menuDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">MENU</a>
+            <ul class="dropdown-menu" aria-labelledby="menuDropdown">
+              <li><a class="dropdown-item" href="#">MENU TABS (WOOCOMMERCE)</a></li>
+              <li><a class="dropdown-item" href="#">MENU LIST (WOoCOMMERCE)</a></li>
+              <li><a class="dropdown-item" href="#">MENU TABS</a></li>
+              <li><a class="dropdown-item" href="#">MENU LIST</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#order" id="orderDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">ORDER</a>
+            <ul class="dropdown-menu" aria-labelledby="orderDropdown">
+              <li><a class="dropdown-item" href="#">RESERVATION (BOKKING CALENDER)</a></li>
+              <li><a class="dropdown-item" href="#">RESERVATION (CONTACT FORM 7)</a></li>
+              <li><a class="dropdown-item" href="#">RESERVATION (OPENTABLE)</a></li>
+              <li><a class="dropdown-item" href="#">RESERVATION POP UP</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#pages" id="pagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">PAGES</a>
+            <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+              <li><a class="dropdown-item" href="#">GALLERY</a></li>
+              <li><a class="dropdown-item" href="#">HISTORY</a></li>
+              <li><a class="dropdown-item" href="#">FEATURES</a></li>
+              <li><a class="dropdown-item" href="#">PRICING</a></li>
+              <li><a class="dropdown-item" href="#">OUR CHEFS</a></li>
+              <li><a class="dropdown-item" href="#">FAQ</a></li>
+              <li><a class="dropdown-item" href="#">TESTIMONIALS</a></li>
+              <li><a class="dropdown-item" href="#">404 PAGE</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#blog" id="blogDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="border-bottom: 3px solid #ffb23f;">BLOG</a>
+            <ul class="dropdown-menu" aria-labelledby="blogDropdown">
+              <li><a class="dropdown-item" href="blog-list.html">BLOG LIST</a></li>
+              <li><a class="dropdown-item active" href="blog-post.html">BLOG POST</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="contact.html" id="contactNav">CONTACT</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#shop" id="shopDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">SHOP</a>
+            <ul class="dropdown-menu" aria-labelledby="shopDropdown">
+              <li><a class="dropdown-item" href="#">PRODUCT LIST</a></li>
+              <li><a class="dropdown-item" href="#">SINGLE PRODUCT</a></li>
+              <li><a class="dropdown-item" href="#">CART</a></li>
+              <li><a class="dropdown-item" href="#">CHECKOUT</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center gap-2 ms-auto">
+          <a href="#reservation" class="btn btn-warning fw-bold px-5 py-2 ms-2" style="font-size: 0.8rem;">RESERVATION</a>
+          <a href="#cart" class="btn btn-outline-dark position-relative ms-6">
+            <i class="bi bi-bag"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">0</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Blog Post Hero Section -->
+  <section class="blog-hero-section d-flex align-items-center position-relative" style="min-height: 40vh; width: 100vw; margin-left: calc(-50vw + 50%); margin-right: calc(-50vw + 50%); background: none;">
+    <div class="container position-relative" style="z-index:2;">
+      <div class="row align-items-center">
+        <div class="col-lg-10 mx-auto text-white py-5 text-start">
+          <h1 class="display-2 fw-bold mb-3" style="color: #000000;"><br> Business Breakfast</h1>
+          <div class="d-flex align-items-center gap-3 mb-2">
+            <img src="images/emptyprofile.jpeg" alt="Oleksandr" class="rounded-circle" width="40" height="40">
+            <span class="fw-bold text-dark text-uppercase">Oleksandr</span>
+            <span class="badge bg-light text-dark">May 1, 2021</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Post Content Section -->
+  <section class="py-5 bg-white">
+    <div class="container-fluid px-0">
+      <img src="images/gallery-i-3.jpg" class="img-fluid w-100 mb-4" alt="Business Breakfast" style="display:block;">
+    </div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <p class="lead">Consectetur adipisicing elit. Soluta, impedit, saepe. Unde minima distinctio officiis amet temporibus, consequuntur dolorem dicta reprehenderit doloremque voluptate voluptas molestiae at pariatur soluta, nemo eos molestias beatae excepturi deleniti. Ea hic perferendis ut possimus. Culpa corrupti unde fugit doloremque omnis aliquam nam, velit, cupiditate quis reiciendis provident dolorum adipisci accusamus. Cum debitis, ipsum est ipsam vitae vel, quam in sint reprehenderit ducimus repudiandae ab et.</p>
+          <h2 class="fw-bold mt-5">Ingredients</h2>
+          <ul>
+            <li>Dolor sit amet</li>
+            <li>Maiores distinctio</li>
+            <li>Expedita sunt repellendus</li>
+            <li>Corrupti ipsum</li>
+            <li>Sunt repellendu</li>
+            <li>Nemo quod maiores</li>
+            <li>Consectetur adipisicing</li>
+          </ul>
+          <h2 class="fw-bold mt-5">Culpa corrupti unde fugit</h2>
+          <p>Consectetur adipisicing elit. Soluta, impedit, saepe. Unde minima distinctio officiis amet temporibus, consequuntur dolorem dicta reprehenderit doloremque voluptate voluptas molestiae at pariatur soluta, nemo eos molestias beatae excepturi deleniti. Ea hic perferendis ut possimus. Culpa corrupti unde fugit doloremque omnis aliquam nam, velit, cupiditate quis reiciendis provident dolorum adipisci accusamus. Cum debitis, ipsum est ipsam vitae vel, quam in sint reprehenderit ducimus repudiandae ab et.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ipsam culpa esse amet quaerat doloribus nam sequi tempore aspernatur recusandae aliquam expedita eligendi maiores quis obcaecati, illo earum dolorum minima explicabo ea ut, fugiat veniam in. Amet dolores commodi vitae, sint debitis accusantium unde, placeat dolorum necessitatibus reiciendis, explicabo velit.</p>
+          <div class="mb-3">
+            <span class="text-muted">Posted in </span>
+            <span class="text-warning">Deserts, Salads</span>
+          </div>
+          <div class="mb-3">
+            <span class="text-muted">Tags: </span>
+            <span class="badge bg-warning text-dark me-1">FOOD</span>
+            <span class="badge bg-warning text-dark me-1">ORGANIC</span>
+            <span class="badge bg-warning text-dark">PUB</span>
+          </div>
+          <div class="mb-4">
+            <span class="text-muted me-2">Share:</span>
+            <a href="#" class="text-dark me-2"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-dark me-2"><i class="bi bi-x"></i></a>
+            <a href="#" class="text-dark me-2"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="text-dark me-2"><i class="bi bi-pinterest"></i></a>
+          </div>
+          <div class="d-flex justify-content-between align-items-center mb-5">
+            <a href="#" class="text-dark fw-bold"><i class="bi bi-arrow-left"></i> Previous</a>
+            <a href="#" class="text-dark fw-bold">All Posts</a>
+          </div>
+          <!-- Comments Section -->
+          <h3 class="fw-bold mb-4">3 Comments</h3>
+          <div class="mb-4">
+            <div class="d-flex mb-4">
+              <img src="images/emptyprofile.jpeg" alt="Joh Doe" class="rounded-circle me-3" width="56" height="56">
+              <div class="flex-grow-1">
+                <div class="fw-bold">Joh Doe <span class="badge bg-light text-dark ms-2">2:29 pm June 3, 2021</span></div>
+                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ipsam culpa esse amet quaerat doloribus nam sequi tempore aspernatur recusandae aliquam expedita eligendi maiores quis obcaecati, illo earum dolorum minima explicabo ea ut, fugiat veniam in. Amet dolores commodi vitae, sint debitis accusantium unde, placeat dolorum necessitatibus reiciendis, explicabo velit.</div>
+                <a href="#" class="text-dark fw-bold small mt-2 d-inline-block">Reply <i class="bi bi-reply"></i></a>
+              </div>
+            </div>
+            <div class="d-flex mb-4">
+              <img src="images/emptyprofile.jpeg" alt="Alex" class="rounded-circle me-3" width="56" height="56">
+              <div class="flex-grow-1">
+                <div class="fw-bold">Alex <span class="badge bg-light text-dark ms-2">2:50 pm June 3, 2021</span></div>
+                <div>Sed ipsam culpa esse amet quaerat doloribus nam sequi tempore aspernatur recusandae aliquam expedita eligendi maiores quis obcaecati, illo earum dolorum minima explicabo ea ut, fugiat veniam in. Amet dolores commodi vitae, sint debitis accusantium unde, placeat dolorum necessitatibus reiciendis, explicabo velit.</div>
+                <a href="#" class="text-dark fw-bold small mt-2 d-inline-block">Reply <i class="bi bi-reply"></i></a>
+              </div>
+            </div>
+            <div class="d-flex mb-4">
+              <img src="images/emptyprofile.jpeg" alt="Jacob" class="rounded-circle me-3" width="56" height="56">
+              <div class="flex-grow-1">
+                <div class="fw-bold">Jacob <span class="badge bg-light text-dark ms-2">2:50 pm June 3, 2021</span></div>
+                <div>Amet dolores commodi vitae, sint debitis accusantium unde, placeat dolorum necessitatibus reiciendis, explicabo velit.</div>
+                <a href="#" class="text-dark fw-bold small mt-2 d-inline-block">Reply <i class="bi bi-reply"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- Write a Comment Section -->
+          <h4 class="fw-bold mb-3">Write a comment</h4>
+          <form>
+            <div class="mb-3">
+              <textarea class="form-control form-control-lg" rows="3" placeholder="Comment"></textarea>
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control form-control-lg" placeholder="Name">
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control form-control-lg" placeholder="Email">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="saveInfo">
+              <label class="form-check-label" for="saveInfo">Save my name, email, and website in this browser for the next time I comment.</label>
+            </div>
+            <button type="submit" class="btn btn-warning fw-bold px-5 py-2" style="font-size: 1.1rem;">SUBMIT</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (same as home page) -->
+  <footer class="footer-section py-5 position-relative" style="background: #151d1f;">
+    <div class="container">
+      <hr class="footer-separator mb-5" style="border-top: 2px dotted #3a4447; opacity: 0.5;">
+      <div class="row align-items-start pb-4">
+        <!-- About us -->
+        <div class="col-md-4 mb-4 mb-md-0">
+          <h4 class="fw-bold text-white mb-3">About us</h4>
+          <p class="footer-text mb-4" style="color: #bfc6c9;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita repudiandae neque illum aspernatur fugiat maiores id magni, modi, quaerat vitae. Consectetur adipisicing elit.</p>
+          <a href="#" class="footer-link text-warning fw-bold">READ MORE</a>
+        </div>
+        <!-- Contact info -->
+        <div class="col-md-4 mb-4 mb-md-0">
+          <h4 class="fw-bold text-white mb-3">Contact info</h4>
+          <ul class="list-unstyled mb-4" style="color: #bfc6c9;">
+            <li class="mb-2"><span class="fw-bold text-uppercase" style="color:#fff; letter-spacing:1px;">Call :</span> <span class="ms-2">+76 (094) 754 43 71</span></li>
+            <li class="mb-2"><span class="fw-bold text-uppercase" style="color:#fff; letter-spacing:1px;">Write :</span> <span class="ms-2">your.email.inbox@here.com</span></li>
+            <li class="mb-2"><span class="fw-bold text-uppercase" style="color:#fff; letter-spacing:1px;">Find us :</span> <span class="ms-2">Canada, Toronto, Avenue 31B,</span></li>
+          </ul>
+          <a href="#" class="footer-link text-warning fw-bold">READ MORE</a>
+        </div>
+        <!-- Gallery -->
+        <div class="col-md-4">
+          <h4 class="fw-bold text-white mb-3">Gallery</h4>
+          <div class="footer-gallery d-flex align-items-center gap-2 mb-2" id="footer-gallery">
+            <img src="images/gallery-i-3.jpg" alt="Gallery 1" class="footer-gallery-img img-fluid rounded" width="60" height="60">
+            <img src="images/gallery-i-4.jpg" alt="Gallery 2" class="footer-gallery-img img-fluid rounded" width="60" height="60">
+            <img src="images/pizza.jpeg" alt="Gallery 3" class="footer-gallery-img img-fluid rounded" width="60" height="60">
+            <img src="images/gallery-i-6.jpg" alt="Gallery 4" class="footer-gallery-img img-fluid rounded" width="60" height="60">
+            <img src="images/deserts.jpeg" alt="Gallery 5" class="footer-gallery-img img-fluid rounded" width="60" height="60">
+            <img src="images/pancakes.jpeg" alt="Gallery 6" class="footer-gallery-img img-fluid rounded" width="60" height="60">
+          </div>
+          <div class="d-flex align-items-center justify-content-between">
+            <a href="#" class="footer-link text-warning fw-bold">SEE MORE</a>
+            <div class="footer-gallery-arrows d-flex align-items-center gap-2">
+              <button class="btn btn-link p-0 text-warning" id="footer-gallery-prev" aria-label="Previous"><i class="bi bi-arrow-left fs-4"></i></button>
+              <button class="btn btn-link p-0 text-warning" id="footer-gallery-next" aria-label="Next"><i class="bi bi-arrow-right fs-4"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-between align-items-center mt-5 pt-4 border-0">
+        <small class="text-light">&copy; Tastyc 2024 . All rights reserved. Design by <a href="#" class="text-warning fw-bold" style="text-decoration:none;">bslthemes Team</a></small>
+        <a href="#top" id="back-to-top" class="footer-link text-warning fw-bold" style="letter-spacing:2px; font-size:1.1rem;">BACK TO TOP</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Right Button Group -->
+  <div class="floating-btn-group position-fixed d-flex flex-column align-items-center" style="top: 50%; right: 0; transform: translateY(-50%); z-index: 1050;">
+    <button class="btn btn-light border mb-1" style="width:48px; height:48px;"><i class="bi bi-eye-slash fs-4"></i></button>
+    <button class="btn btn-light border mb-1" style="width:48px; height:48px;"><i class="bi bi-life-preserver fs-4"></i></button>
+    <button class="btn btn-light border mb-1" style="width:48px; height:48px;"><i class="bi bi-cart fs-4"></i></button>
+    <button class="btn btn-light border" style="width:48px; height:48px;"><i class="bi bi-grid-3x3-gap fs-4"></i></button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html> 
