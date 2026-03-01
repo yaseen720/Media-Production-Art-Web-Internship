@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Mediplus</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body { font-family: 'Montserrat', Arial, sans-serif; }
+    .navbar {
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+      border-bottom: 1px solid #eee;
+    }
+    .navbar-brand {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #222 !important;
+    }
+    .navbar-nav .nav-link {
+      font-weight: 500;
+      color: #222 !important;
+      margin-right: 18px;
+      position: relative;
+      padding-bottom: 6px;
+    }
+    .navbar-nav .nav-item.active .nav-link, .navbar-nav .nav-link.active {
+      color: #2186fd !important;
+    }
+    .navbar-nav .nav-item.active .nav-link::after, .navbar-nav .nav-link.active::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background: #2186fd;
+      border-radius: 2px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+    .navbar-nav .nav-link.btn {
+      background: #2186fd;
+      border-radius: 6px;
+      padding: 7px 22px;
+      color: #fff !important;
+      margin-right: 0;
+    }
+    .about-section {
+      padding: 60px 0 40px 0;
+      background: #fff;
+    }
+    .about-img {
+      width: 100%;
+      border-radius: 18px;
+      box-shadow: 0 4px 24px rgba(33,134,253,0.08);
+      object-fit: cover;
+      min-height: 400px;
+      max-height: 500px;
+    }
+    .about-content h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #222;
+      margin-bottom: 18px;
+    }
+    .about-content h2 .blue {
+      color: #2186fd;
+    }
+    .about-content p {
+      color: #888;
+      font-size: 1.1rem;
+      margin-bottom: 36px;
+      font-weight: 500;
+    }
+    .about-content .btn {
+      border-radius: 30px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      padding: 12px 32px;
+      margin-right: 18px;
+      box-shadow: 0 4px 16px rgba(33,134,253,0.08);
+    }
+    .about-content .btn-primary {
+      background: #2186fd;
+      border: none;
+    }
+    .about-content .btn-danger {
+      background: #ff5f5f;
+      border: none;
+    }
+    @media (max-width: 991px) {
+      .about-content { margin-top: 32px; text-align: center; }
+      .about-content .btn { margin-bottom: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Top Info Bar -->
+  <div class="top-bar">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div>
+        <span><i class="fa fa-phone mr-1"></i> + 1235 2355 98</span>
+        <span class="ml-3"><i class="fa fa-envelope mr-1"></i> youremail@email.com</span>
+      </div>
+      <div>
+        <a href="#">SIGN UP</a>
+        <a href="#" class="ml-2">SIGN IN</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav id="main-navbar" class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Mediplus</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto align-items-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="department.html">Department</a></li>
+          <li class="nav-item"><a class="nav-link" href="doctors.html">Doctors</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link btn" href="appointment.html">Appointment</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <img src="images/about.jpg" alt="About Mediplus" class="about-img">
+        </div>
+        <div class="col-lg-6 about-content">
+          <h2>We Are <span class="blue">Mediplus</span> A Medical Clinic</h2>
+          <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+          <a href="appointment.html" class="btn btn-primary">Make an appointment</a>
+          <a href="contact.html" class="btn btn-danger">Contact us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (same as index.html) -->
+  <footer class="footer text-white pt-4 pb-2" style="position:relative; background: none;">
+    <div style="position:absolute; top:0; left:0; width:100%; height:100%; background:url('images/footer-bg.jpg') center/cover no-repeat; z-index:0;"></div>
+    <div style="position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(20,20,30,0.5); z-index:1;"></div>
+    <div class="container position-relative" style="z-index:2;">
+      <div class="row text-md-left text-center">
+        <div class="col-md-4 mb-4 mb-md-0">
+          <h5>Mediplus</h5>
+          <p>Far far away, behind the word mountains, far from the countries.</p>
+        </div>
+        <div class="col-md-2 mb-4 mb-md-0">
+          <h6>Departments</h6>
+          <ul class="list-unstyled">
+            <li>Neurology</li>
+            <li>Opthalmology</li>
+            <li>Nuclear Magnetic</li>
+            <li>Surgical</li>
+            <li>Cardiology</li>
+            <li>Dental</li>
+          </ul>
+        </div>
+        <div class="col-md-2 mb-4 mb-md-0">
+          <h6>Links</h6>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-white">Home</a></li>
+            <li><a href="about.html" class="text-white">About</a></li>
+            <li><a href="department.html" class="text-white">Departments</a></li>
+            <li><a href="doctors.html" class="text-white">Doctors</a></li>
+            <li><a href="blog.html" class="text-white">Blog</a></li>
+            <li><a href="contact.html" class="text-white">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 mb-4 mb-md-0">
+          <h6>Services</h6>
+          <ul class="list-unstyled">
+            <li>Emergency Services</li>
+            <li>Qualified Doctors</li>
+            <li>Outdoors Checkup</li>
+            <li>24 Hours Services</li>
+          </ul>
+        </div>
+        <div class="col-md-2 mb-4 mb-md-0">
+          <h6>Have a Questions?</h6>
+          <ul class="list-unstyled">
+            <li>203 Fake St. Mountain View, San Francisco, California, USA</li>
+            <li>+2 392 3929 210</li>
+            <li>info@yourdomain.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-center mt-3">
+        <small>Copyright © All rights reserved | This template is made with <span style="color: #e25555;">&#9829;</span> by Colorlib</small>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html> 
