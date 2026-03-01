@@ -1,0 +1,93 @@
+
+.navbar-brand {
+    font-weight: bold;
+    color: #5b32e7 !important;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+}
+.navbar-brand img {
+    height: 40px;
+    margin-right: 8px;
+}
+.btn-consult {
+    background: #5b32e7;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 2rem;
+    padding: 0.5rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: none;
+}
+.btn-consult:hover {
+    background: #4a27c5;
+    color: #fff; 
+}
+.search-icon {
+    color: #5b32e7;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.marquee-container {
+  position: absolute;
+  top: 20px;
+  right: 60px;
+  z-index: 3;
+  width: 220px; /* Adjust as needed for your card */
+  overflow: visible;
+}
+
+.marquee-card {
+  animation: moveRightLeft 2.5s linear infinite alternate;
+}
+
+@keyframes moveRightLeft {
+  0%   { transform: translateX(0); }
+  50%  { transform: translateX(120px); } /* move right, adjust as needed */
+  100% { transform: translateX(0); }
+}
+
+.marquee-container-bottom {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  z-index: 3;
+  transform: translateX(-50%);
+  width: 180px; /* Adjust as needed for your card */
+  overflow: visible;
+}
+
+.marquee-card-bottom {
+  animation: moveLeftRight 2s linear infinite alternate;
+}
+
+@keyframes moveLeftRight {
+  0%   { transform: translateX(0); }
+  50%  { transform: translateX(-40px); } /* move left, adjust as needed */
+  100% { transform: translateX(0); }
+}
+
+.marquee-container-analytics {
+  position: absolute;
+  top: 90px;
+  left: 30px;
+  z-index: 4;
+  min-width: 260px;
+  max-width: 320px;
+  overflow: visible;
+}
+
+.marquee-card-analytics {
+  animation: moveLeftRightAnalytics 2.2s linear infinite alternate;
+}
+
+@keyframes moveLeftRightAnalytics {
+  0%   { transform: translateX(0); }
+  50%  { transform: translateX(-36px); } /* move left, adjust as needed */
+  100% { transform: translateX(0); }
+}
+ 

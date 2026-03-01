@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEOC Navbar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background: rgba(255,255,255,0.15); backdrop-filter: blur(8px); box-shadow: none; border-bottom: none;">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <!-- Replace with your logo image if available -->
+        <img src="./images/logo1.png" alt="Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Home</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="index1.html">Home 1</a></li>
+              <li><a class="dropdown-item" href="index1.html">Home 2</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="About.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Services</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Service 1</a></li>
+              <li><a class="dropdown-item" href="#">Service 2</a></li>
+              <li><a class="dropdown-item" href="#">Service 3</a></li>
+              <li><a class="dropdown-item" href="#">Service 4</a></li>
+              <li><a class="dropdown-item" href="#">Service 5</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Blogs</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="blog.html">Blog One</a></li>
+              <li><a class="dropdown-item" href="#">Blog left</a></li>
+              <li><a class="dropdown-item" href="#">Blog right</a></li>
+              <li><a class="dropdown-item" href="#">Blog single</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Pages</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">case study</a></li>
+              <li><a class="dropdown-item" href="#">case study single</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+        <span class="search-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <circle cx="11" cy="11" r="8" stroke-width="2" />
+            <line x1="21" y1="21" x2="16.65" y2="16.65" stroke-width="2" />
+          </svg>
+        </span>
+        <a href="#" class="btn btn-consult ms-2">
+          Free Consultation
+          <span style="background:#fff; border-radius:50%; padding:0.2rem 0.4rem; color:#5b32e7; margin-left:0.5rem;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path d="M7 17L17 7M17 7H7m10 0v10" stroke="#5b32e7" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <div style="height:80px;"></div> <!-- Spacer for fixed navbar -->
+
+  <!-- Hero Section Start -->
+  <section class="hero-section py-5" style="background: url('https://seoc-html-v2.vercel.app/assets/img/bg/header-bg1.png') no-repeat center center/cover, #f7f8fd; position: relative; overflow: hidden;">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left: Text Content -->
+        <div class="col-lg-6">
+          <span class="badge rounded-pill px-3 py-2 mb-3"
+            style="background: #e5e0fa; color: #5b32e7; font-weight: 500; font-size: 1rem;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+              style="margin-right: 4px; vertical-align: middle;" fill="none" viewBox="0 0 24 24" stroke="#5b32e7">
+              <path d="M12 2L2 7l10 5 10-5-10-5zm0 13l-8-4v6a2 2 0 002 2h12a2 2 0 002-2v-6l-8 4z" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            Top #1 SEO & Marketing Agency
+          </span>
+          <h1 class="display-4 fw-bold mb-4" style="line-height: 1.1;">
+            Elevate Your Brand with Expert<br>
+            SEO & Digital Marketing
+          </h1>
+          <p class="lead text-muted mb-4">
+            Welcome to SEOC where we specialize in revolutionizing your online presence through expert SEO and digital
+            marketing solutions.
+          </p>
+          <div class="d-flex gap-3 mb-4">
+            <a href="#" class="btn btn-primary px-4 py-2"
+              style="background:#5b32e7; border:none; border-radius:2rem; font-weight:600;">
+              Start Ranking Now
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" style="margin-left:4px;" fill="none"
+                viewBox="0 0 24 24" stroke="#fff">
+                <path d="M5 12h14M13 6l6 6-6 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+            <a href="#" class="btn btn-outline-primary px-4 py-2"
+              style="border-radius:2rem; font-weight:600; border-color:#5b32e7; color:#5b32e7;">
+              Contact Now
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" style="margin-left:4px;" fill="none"
+                viewBox="0 0 24 24" stroke="#5b32e7">
+                <path d="M5 12h14M13 6l6 6-6 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <!-- Right: Image -->
+        <div class="col-lg-6 text-center position-relative">
+          <img src="./images/imgi_26_header-img1.png" alt="Hero Girl" class="img-fluid"
+            style="width: 400px; z-index:2; position:relative;">
+          <!-- Floating card top right -->
+          <div class="marquee-container" style="position:absolute; top:20px; right:60px; z-index:3;">
+            <div class="marquee-card"
+              style="background:#fff; border-radius:12px; box-shadow:0 2px 12px rgba(91,50,231,0.10); padding:10px 18px;">
+              <img src="./images/sudanimage.jpeg" alt="Sudan"
+                style="width:32px; height:32px; border-radius:8px; object-fit:cover; margin-right:8px;">
+              <span style="font-weight:600;">Sudan</span>
+              <span style="color:#5b32e7; font-weight:700; margin-left:8px;">12,8392</span>
+            </div>
+          </div>
+          <!-- Floating card bottom center -->
+          <marquee behavior="alternate" scrollamount="3" style="position:absolute; bottom:-30px; left:50%; transform:translateX(-50%); z-index:3;">
+            <img src="https://seoc-html-v2.vercel.app/assets/img/all-images/header-author-img1.png" style="margin-left:8px;">
+          </marquee>
+          
+
+
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <!-- Decorative shapes -->
+    <div
+      style="position: absolute; top: -60px; left: -60px; width: 200px; height: 200px; background: radial-gradient(circle, #e5e0fa 60%, transparent 100%); border-radius: 50%;">
+    </div>
+    <div style="position: absolute; top: 40px; right: 60px;">
+      <svg width="60" height="60" viewBox="0 0 60 60">
+        <circle cx="30" cy="30" r="30" fill="#e5e0fa" />
+      </svg>
+    </div>
+    </div>
+  </section>
+  <!-- Hero Section End -->
+
+  <!-- Trusted Companies Section -->
+  <section class="py-4" style="background: #f3f0fa;">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left: Text -->
+        <div class="col-md-3 text-md-start text-center mb-3 mb-md-0">
+          <div style="color:#222; font-weight:600; font-size:1.3rem;">
+            Trusted by<br>Top Companies
+          </div>
+        </div>
+        <!-- Right: Animated Logos -->
+        <div class="col-md-9">
+          <div class="marquee-wrapper" style="overflow:hidden; position:relative; width:100%;">
+            <div class="marquee-logos d-flex align-items-center" style="white-space:nowrap;">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" style="height:54px; margin:0 40px;">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft" style="height:54px; margin:0 40px;">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Airbnb_Logo_Bélo.svg" alt="Airbnb" style="height:54px; margin:0 40px;">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon" style="height:54px; margin:0 40px;">
+              <img src="https://tse3.mm.bing.net/th/id/OIP.DYIuQECclm9kHqNM7cvgGQHaEK?pid=Api&P=0&h=220" alt="FedEx" style="height:54px; margin:0 40px;">
+              <!-- Duplicate for seamless loop -->
+              <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" style="height:54px; margin:0 40px;">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft" style="height:54px; margin:0 40px;">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Airbnb_Logo_Bélo.svg" alt="Airbnb" style="height:54px; margin:0 40px;">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon" style="height:54px; margin:0 40px;">
+              <img src="https://tse3.mm.bing.net/th/id/OIP.DYIuQECclm9kHqNM7cvgGQHaEK?pid=Api&P=0&h=220" alt="FedEx" style="height:54px; margin:0 40px;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <style>
+      .marquee-wrapper {
+        height: 70px;
+      }
+      .marquee-logos {
+        display: flex;
+        align-items: center;
+        animation: marquee-logos 18s linear infinite;
+      }
+      @keyframes marquee-logos {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+      }
+      @media (max-width: 768px) {
+        .marquee-logos img {
+          height: 36px !important;
+          margin: 0 18px !important;
+        }
+        .marquee-wrapper {
+          height: 44px;
+        }
+      }
+    </style>
+  </section>
+
+  <!-- Comprehensive SEO Section -->
+  <section class="py-5" style="background: linear-gradient(90deg, #f7f8fd 60%, #f3f0fa 100%);">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-5 text-center mb-4 mb-md-0">
+          <img src="./images/imgi_39_about-img1.png" alt="SEO Expert" class="img-fluid rounded-circle"
+            style="max-width: 360px; height: 460px;">
+        </div>
+        <div class="col-md-7 d-flex flex-row align-items-start position-relative" style="gap: 0;">
+          <div class="flex-grow-1" style="min-width:0;">
+            <!-- Rotating Circular Text with Arrow, left-aligned above heading -->
+            <div class="d-flex justify-content-start mb-3" style="margin-left: 0;">
+              <div class="rotating-circle-text">
+                <svg width="160" height="160" viewBox="0 0 160 160">
+                  <defs>
+                    <path id="circlePath" d="M80,80 m-65,0 a65,65 0 1,1 130,0 a65,65 0 1,1 -130,0"/>
+                  </defs>
+                  <text font-size="15" font-family="Arial, sans-serif" fill="#5b32e7">
+                    <textPath xlink:href="#circlePath" startOffset="0">
+                      SUCCESS BRAND WITH DEMOUI BUILD A
+                    </textPath>
+                  </text>
+                  <!-- Arrow in center -->
+                  <g transform="translate(80,80)">
+                    <g>
+                      <line x1="0" y1="-28" x2="0" y2="18" stroke="#222" stroke-width="2.5" stroke-linecap="round"/>
+                      <polyline points="-7,-21 0,-28 7,-21" fill="none" stroke="#222" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+            </div>
+            <h1 class="fw-bold mb-3">Comprehensive <br> SEO & Digital <br> Marketing <br> Solutions.</h1>
+            <p class="lead text-muted mb-4">
+              Welcome to SEOC your trusted partner for <br> comprehensive SEO and digital marketing <br> solutions. With our proven
+              expertise and <br> innovative strategies, we help you succeed <br> in the digital landscape.
+            </p>
+            <a href="#" class="btn btn-primary px-4 py-2"
+              style="background:#5b32e7; border:none; border-radius:2rem; font-weight:600;">
+              Learn More
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" style="margin-left:4px;" fill="none"
+                viewBox="0 0 24 24" stroke="#fff">
+                <path d="M5 12h14M13 6l6 6-6 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+          </div>
+          <!-- Right Side Image with Circulating Pink Earth -->
+          <div class="position-relative d-none d-md-block ms-4" style="min-width: 320px; min-height: 400px; flex-shrink:0; display: block;">
+            <!-- Circulating Pink Earth SVG, much larger and offset to top right -->
+            <svg class="circulating-earth" width="520" height="520" viewBox="0 0 520 520" style="position:absolute; top:-120px; right:-180px; z-index:1;">
+              <defs>
+                <radialGradient id="pinkGlow" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#ff5fc0" stop-opacity="0.7"/>
+                  <stop offset="100%" stop-color="#ff5fc0" stop-opacity="0.1"/>
+                </radialGradient>
+              </defs>
+              <circle cx="260" cy="260" r="180" fill="url(#pinkGlow)"/>
+              <ellipse cx="260" cy="260" rx="240" ry="110" fill="none" stroke="#ff5fc0" stroke-width="2"/>
+              <ellipse cx="260" cy="260" rx="180" ry="300" fill="none" stroke="#ff5fc0" stroke-width="1.5"/>
+              <ellipse cx="260" cy="260" rx="300" ry="180" fill="none" stroke="#ff5fc0" stroke-width="1"/>
+            </svg>
+            <img src="./images/imgi_44_about-img2.png" alt="Digital Marketing" class="img-fluid rounded-circle position-relative" style="max-width: 320px; height: 400px; z-index:2; background: #f7f8fd; margin:0 auto; display:block; box-shadow:0 8px 32px rgba(255,95,192,0.08); position:relative;">
+          </div>
+        </div>
+        <style>
+          .rotating-circle-text {
+            animation: rotateCircle 8s linear infinite;
+            width: 160px;
+            height: 160px;
+          }
+          @keyframes rotateCircle {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+          }
+          .circulating-earth {
+            animation: circulateEarth 8s linear infinite;
+            transform-origin: 50% 50%;
+          }
+          @keyframes circulateEarth {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+          }
+          @media (max-width: 768px) {
+            .rotating-circle-text {
+              width: 100px;
+              height: 100px;
+            }
+            .circulating-earth {
+              width: 60px !important;
+              height: 60px !important;
+            }
+          }
+        </style>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Digital Marketing Services Section -->
+  <section class="py-5" style="background: linear-gradient(90deg, #f7f8fd 60%, #e6f7fa 100%); position:relative;">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-2" style="font-size:2.3rem;">Popular Digital Marketing Services<br>To Build Your
+        Business</h2>
+      <p class="text-center text-muted mb-5" style="max-width:600px;margin:0 auto;">
+        Our expert team specializes in delivering tailored solutions designed to elevate your brand and drive measurable
+        results.
+      </p>
+      <!-- Decorative stars -->
+      <span style="position:absolute;left:7%;top:70px;font-size:2rem;color:#ff5fc0;">✱</span>
+      <span style="position:absolute;right:7%;top:70px;font-size:2rem;color:#ff5fc0;">✱</span>
+      <div class="row g-0">
+        <div class="col-md-3">
+          <div class="h-100 p-4 text-center" style="background:#ffd1e3;border-radius:10px 0 0 10px;">
+            <img src="https://img.icons8.com/fluency/96/seo.png" alt="SEO" class="mb-3" style="height:64px;">
+            <h5 class="fw-bold mb-2">Search Engine Optimization<br>( SEO )</h5>
+            <p class="text-muted mb-0" style="font-size:1rem;">Enhance your online visibility & drive organic traffic
+              with our advanced SEO techniques. We optimize your website to rank higher.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="h-100 p-4 text-center" style="background:#d6d6ff;">
+            <img src="hhttps://seoc-html-v2.vercel.app/assets/img/icons/service-icon2.svg" alt="PPC" class="mb-3"
+              style="height:64px;">
+            <h5 class="fw-bold mb-2">Pay-Per-Click (PPC)<br>Advertising</h5>
+            <p class="text-muted mb-0" style="font-size:1rem;">Reach your audience instantly and drive qualified leads
+              with targeted PPC campaigns. Our experts craft compelling ad copy and optimize.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="h-100 p-4 text-center" style="background:#ffe9b3;">
+            <img src="https://img.icons8.com/fluency/96/social-media.png" alt="Social Media" class="mb-3"
+              style="height:64px;">
+            <h5 class="fw-bold mb-2">Social Media Marketing</h5>
+            <p class="text-muted mb-0" style="font-size:1rem;">Build a strong brand presence and engage with your
+              audience on social media platforms. We create strategic social media campaigns to boost brand.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="h-100 p-4 text-center" style="background:#e3ffd6;border-radius:0 10px 10px 0;">
+            <img src="https://img.icons8.com/fluency/96/web-design.png" alt="Web Design" class="mb-3"
+              style="height:64px;">
+            <h5 class="fw-bold mb-2">Website Design and<br>Development</h5>
+            <p class="text-muted mb-0" style="font-size:1rem;">Make a lasting impression with a professionally designed
+              and user-friendly website. Our web design and development services ensure website.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tailored Solutions Section -->
+  <section class="py-5" style="background: linear-gradient(90deg, #f7f8fd 60%, #e6f7fa 100%); position:relative;">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-2" style="font-size:2.1rem;">Tailored Solutions, Proven Results,<br>And
+        Exceptional Service</h2>
+      <p class="text-center text-muted mb-5" style="max-width:700px;margin:0 auto;">
+        We pride ourselves on delivering a value proposition that goes beyond expectations. Our approach is centered on
+        understanding your business inside
+      </p>
+      <!-- Decorative stars -->
+      <span style="position:absolute;left:7%;top:60px;font-size:2rem;color:#ff5fc0;">✱</span>
+      <span style="position:absolute;right:7%;top:60px;font-size:2rem;color:#ff5fc0;">✱</span>
+      <div class="row g-4 justify-content-center">
+        <!-- Left: Image Card -->
+        <div class="col-lg-7">
+          <div class="position-relative h-100" style="border-radius:16px;overflow:hidden;">
+            <img
+              src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=facearea&w=800&h=400&facepad=2"
+              alt="Value Proposition" class="img-fluid w-100" style="min-height:340px;object-fit:cover;">
+            <div class="position-absolute top-0 end-0 m-3" style="z-index:2;">
+              <span style="display:inline-block;background:#5b32e7;color:#fff;border-radius:50%;padding:10px 12px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24"
+                  stroke="#fff">
+                  <path d="M7 17L17 7M17 7H7m10 0v10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+            </div>
+            <div class="position-absolute bottom-0 start-0 w-100 p-4"
+              style="background: linear-gradient(0deg, rgba(0,0,0,0.7) 60%, rgba(0,0,0,0.1) 100%); color:#fff;">
+              <div class="mb-1" style="font-size:1rem; font-weight:500;">Our Value</div>
+              <h4 class="fw-bold mb-2">Explore Our Unique Value Proposition &<br>How We Drive Business Growth</h4>
+              <p class="mb-3" style="font-size:1rem; color:#e0e0e0;">we're committed to delivering exceptional value to
+                our clients. We understand that every business is unique, personalized approach to every project we
+                undertake.</p>
+              <a href="#" class="btn btn-primary px-4 py-2"
+                style="background:#5b32e7; border:none; border-radius:2rem; font-weight:600;">
+                Learn More
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" style="margin-left:4px;" fill="none"
+                  viewBox="0 0 24 24" stroke="#fff">
+                  <path d="M5 12h14M13 6l6 6-6 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Right: Mission and Vision Cards -->
+        <div class="col-lg-5 d-flex flex-column gap-4">
+          <div class="p-4" style="background:#d6d6ff; border-radius:12px; position:relative;">
+            <span style="font-size:1rem; color:#5b32e7; font-weight:600;">Our Mission</span>
+            <span
+              style="position:absolute;top:18px;right:18px;display:inline-block;background:#5b32e7;color:#fff;border-radius:50%;padding:6px 8px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
+                stroke="#fff">
+                <path d="M7 17L17 7M17 7H7m10 0v10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+            <h5 class="fw-bold mt-2 mb-2" style="color:#222;">We strive to be more than just a service provider; we aim
+              to be trusted SEOC</h5>
+            <p class="mb-0" style="color:#444;">By staying true to our mission and values, we are committed to helping
+              businesses of all sizes achieve their goals, realize their potential shape.</p>
+          </div>
+          <div class="p-4" style="background:#ffd1e3; border-radius:12px; position:relative;">
+            <span style="font-size:1rem; color:#ff5fc0; font-weight:600;">Our Vision</span>
+            <span
+              style="position:absolute;top:18px;right:18px;display:inline-block;background:#ff5fc0;color:#fff;border-radius:50%;padding:6px 8px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
+                stroke="#fff">
+                <path d="M7 17L17 7M17 7H7m10 0v10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+            <h5 class="fw-bold mt-2 mb-2" style="color:#222;">We aspire to create a world where every business owner
+              feels empowered</h5>
+            <p class="mb-0" style="color:#444;">By staying true to our vision and values, we are committed to driving
+              positive change and shaping a brighter future for businesses and communities.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits of SEO & Digital Marketing Section -->
+  <section class="py-5" style="background: linear-gradient(90deg, #f7f8fd 60%, #e6f7fa 100%); position:relative;">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-2" style="font-size:2.1rem;">Benefits of SEO & Digital Marketing</h2>
+      <p class="text-center text-muted mb-5" style="max-width:700px;margin:0 auto;">
+        By investing in strategic SEO and digital marketing initiatives, businesses can unlock a myriad of benefits.
+      </p>
+      <!-- Decorative stars -->
+      <span style="position:absolute;left:7%;top:60px;font-size:2rem;color:#ff5fc0;">✱</span>
+      <span style="position:absolute;right:7%;top:60px;font-size:2rem;color:#ff5fc0;">✱</span>
+      <div class="d-flex justify-content-center gap-2 flex-wrap">
+        <!-- Card 1 -->
+        <div style="width:140px; height:320px; border-radius:12px; overflow:hidden; position:relative;">
+          <img
+            src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=facearea&w=400&h=320&facepad=2"
+            alt="Web Design" style="width:100%; height:100%; object-fit:cover;">
+          <div
+            style="position:absolute; bottom:0; left:0; width:100%; background:rgba(0,0,0,0.4); color:#fff; writing-mode:vertical-rl; text-align:center; font-weight:600; font-size:1.1rem; letter-spacing:1px; padding:10px 0;">
+            Website Design & Development</div>
+        </div>
+        <!-- Card 2 -->
+        <div style="width:100px; height:320px; border-radius:12px; overflow:hidden; position:relative;">
+          <img
+            src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=facearea&w=400&h=320&facepad=2"
+            alt="SEO" style="width:100%; height:100%; object-fit:cover;">
+          <div
+            style="position:absolute; bottom:0; left:0; width:100%; background:rgba(0,0,0,0.4); color:#fff; writing-mode:vertical-rl; text-align:center; font-weight:600; font-size:1.1rem; letter-spacing:1px; padding:10px 0;">
+            SEO</div>
+        </div>
+        <!-- Card 3 -->
+        <div style="width:120px; height:320px; border-radius:12px; overflow:hidden; position:relative;">
+          <img
+            src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=facearea&w=400&h=320&facepad=2"
+            alt="PPC" style="width:100%; height:100%; object-fit:cover;">
+          <div
+            style="position:absolute; bottom:0; left:0; width:100%; background:rgba(0,0,0,0.4); color:#fff; writing-mode:vertical-rl; text-align:center; font-weight:600; font-size:1.1rem; letter-spacing:1px; padding:10px 0;">
+            PPC Advertising</div>
+        </div>
+        <!-- Card 4 -->
+        <div style="width:120px; height:320px; border-radius:12px; overflow:hidden; position:relative;">
+          <img
+            src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=facearea&w=400&h=320&facepad=2"
+            alt="Social Media" style="width:100%; height:100%; object-fit:cover;">
+          <div
+            style="position:absolute; bottom:0; left:0; width:100%; background:rgba(0,0,0,0.4); color:#fff; writing-mode:vertical-rl; text-align:center; font-weight:600; font-size:1.1rem; letter-spacing:1px; padding:10px 0;">
+            Social Media Marketing</div>
+        </div>
+        <!-- Card 5 -->
+        <div style="width:120px; height:320px; border-radius:12px; overflow:hidden; position:relative;">
+          <img
+            src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=facearea&w=400&h=320&facepad=2"
+            alt="Content Marketing" style="width:100%; height:100%; object-fit:cover;">
+          <div
+            style="position:absolute; bottom:0; left:0; width:100%; background:rgba(0,0,0,0.4); color:#fff; writing-mode:vertical-rl; text-align:center; font-weight:600; font-size:1.1rem; letter-spacing:1px; padding:10px 0;">
+            Content Marketing</div>
+        </div>
+        <!-- Card 6 -->
+        <div style="width:120px; height:320px; border-radius:12px; overflow:hidden; position:relative;">
+          <img
+            src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=facearea&w=400&h=320&facepad=2"
+            alt="Email Marketing" style="width:100%; height:100%; object-fit:cover;">
+          <div
+            style="position:absolute; bottom:0; left:0; width:100%; background:rgba(0,0,0,0.4); color:#fff; writing-mode:vertical-rl; text-align:center; font-weight:600; font-size:1.1rem; letter-spacing:1px; padding:10px 0;">
+            Email Marketing</div>
+        </div>
+        <!-- Card 7 (Analytics) -->
+        <div style="width:220px; height:320px; border-radius:12px; overflow:hidden; position:relative;">
+          <img
+            src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=facearea&w=400&h=320&facepad=2"
+            alt="Analytics" style="width:100%; height:100%; object-fit:cover;">
+          <div
+            style="position:absolute; bottom:0; left:0; width:100%; background:rgba(0,0,0,0.6); color:#fff; padding:24px 18px;">
+            <div style="font-weight:700; font-size:1.1rem;">Analytics & Reporting</div>
+            <div style="font-size:0.98rem; color:#e0e0e0;">We understand the critical role that a well-designed and
+              user-friendly website plays in shaping your online presence driving.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Google Reviews/Testimonial Section -->
+  <section class="py-5" style="background: linear-gradient(90deg, #f7f8fd 60%, #e6f7fa 100%); position:relative;">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-2" style="font-size:2.1rem;">What Our Client Say<br>On Google Reviews</h2>
+      <p class="text-center text-muted mb-5" style="max-width:700px;margin:0 auto;">
+        Don't just take our word for it. Hear what our satisfied clients have to say about their experience partnering
+        with SEOC
+      </p>
+      <!-- Decorative stars -->
+      <span style="position:absolute;left:7%;top:60px;font-size:2rem;color:#ff5fc0;">✱</span>
+      <span style="position:absolute;right:7%;top:60px;font-size:2rem;color:#ff5fc0;">✱</span>
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row justify-content-center align-items-center">
+              <div class="col-md-5 col-lg-4 mb-3 mb-md-0">
+                <div class="p-4 bg-white h-100 d-flex flex-column justify-content-between"
+                  style="border-radius:12px; border:1.5px solid #d6d6ff; min-height:270px;">
+                  <div class="mb-3" style="font-size:1.05rem;">"Working with SEOC has been a game-changer for our
+                    business. Their expertise in SEO and digital marketing has helped us achieve remarkable results and
+                    significantly increase our online visibility."</div>
+                  <div class="d-flex align-items-center justify-content-between mt-auto">
+                    <div>
+                      <span style="color:#5b32e7; font-size:1.1rem;">★★★★★</span><br>
+                      <span class="fw-bold">John Doe</span>
+                    </div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google"
+                      style="height:32px;">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-7 col-lg-6">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client" class="img-fluid rounded"
+                  style="max-height:270px; object-fit:cover;">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row justify-content-center align-items-center">
+              <div class="col-md-5 col-lg-4 mb-3 mb-md-0">
+                <div class="p-4 bg-white h-100 d-flex flex-column justify-content-between"
+                  style="border-radius:12px; border:1.5px solid #d6d6ff; min-height:270px;">
+                  <div class="mb-3" style="font-size:1.05rem;">"Working with SEOC has been a game-changer for our
+                    business. Their expertise in SEO and digital marketing has helped us achieve remarkable results and
+                    significantly increase our online visibility."</div>
+                  <div class="d-flex align-items-center justify-content-between mt-auto">
+                    <div>
+                      <span style="color:#5b32e7; font-size:1.1rem;">★★★★★</span><br>
+                      <span class="fw-bold">John Doe</span>
+                    </div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google"
+                      style="height:32px;">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-7 col-lg-6">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client" class="img-fluid rounded"
+                  style="max-height:270px; object-fit:cover;">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row justify-content-center align-items-center">
+              <div class="col-md-5 col-lg-4 mb-3 mb-md-0">
+                <div class="p-4 bg-white h-100 d-flex flex-column justify-content-between"
+                  style="border-radius:12px; border:1.5px solid #d6d6ff; min-height:270px;">
+                  <div class="mb-3" style="font-size:1.05rem;">"Working with SEOC has been a game-changer for our
+                    business. Their expertise in SEO and digital marketing has helped us achieve remarkable results and
+                    significantly increase our online visibility."</div>
+                  <div class="d-flex align-items-center justify-content-between mt-auto">
+                    <div>
+                      <span style="color:#5b32e7; font-size:1.1rem;">★★★★★</span><br>
+                      <span class="fw-bold">John Doe</span>
+                    </div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google"
+                      style="height:32px;">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-7 col-lg-6">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client" class="img-fluid rounded"
+                  style="max-height:270px; object-fit:cover;">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center mt-4">
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active mx-1"
+            aria-current="true" aria-label="Slide 1"
+            style="width:12px;height:12px;border-radius:50%;background:#5b32e7;border:none;"></button>
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" class="mx-1"
+            aria-label="Slide 2"
+            style="width:12px;height:12px;border-radius:50%;background:#d6d6ff;border:none;"></button>
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" class="mx-1"
+            aria-label="Slide 3"
+            style="width:12px;height:12px;border-radius:50%;background:#d6d6ff;border:none;"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest Blog Posts Section -->
+  <section class="py-5" style="background: linear-gradient(90deg, #f7f8fd 60%, #e6f7fa 100%); position:relative;">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-2" style="font-size:2.1rem;">Insights & Innovations:<br>Our Latest Blog Posts
+      </h2>
+      <p class="text-center text-muted mb-5" style="max-width:700px;margin:0 auto;">
+        Explore our blog to discover actionable insights, success stories, and expert advice that can help drive growth
+        for your business.
+      </p>
+      <!-- Decorative stars -->
+      <span style="position:absolute;left:7%;top:60px;font-size:2rem;color:#ff5fc0;">✱</span>
+      <span style="position:absolute;right:7%;top:60px;font-size:2rem;color:#ff5fc0;">✱</span>
+      <div class="row g-4 justify-content-center">
+        <!-- Blog Card 1 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0" style="border-radius:14px;">
+            <img
+              src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=facearea&w=400&h=220&facepad=2"
+              class="card-img-top" alt="SEO Tips" style="border-radius:14px 14px 0 0; height:220px; object-fit:cover;">
+            <div class="card-body">
+              <div class="mb-2 text-muted" style="font-size:0.98rem;">
+                <span class="me-2"><i class="bi bi-person-fill"></i> Ben Stokes</span>
+                <span><i class="bi bi-calendar-event"></i> 16 August 2023</span>
+              </div>
+              <h5 class="card-title fw-bold">10 Essential SEO Tips to Boost Your Website's Ranking</h5>
+              <p class="card-text">Are you looking to improve your website's visibility and attract more organic
+                traffic?</p>
+              <a href="#" class="fw-bold" style="color:#5b32e7;">Read More <svg xmlns="http://www.w3.org/2000/svg"
+                  width="14" height="14" style="margin-left:2px;" fill="none" viewBox="0 0 24 24" stroke="#5b32e7">
+                  <path d="M5 12h14M13 6l6 6-6 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg></a>
+            </div>
+          </div>
+        </div>
+        <!-- Blog Card 2 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0" style="border-radius:14px;">
+            <img
+              src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=facearea&w=400&h=220&facepad=2"
+              class="card-img-top" alt="PPC Advertising"
+              style="border-radius:14px 14px 0 0; height:220px; object-fit:cover;">
+            <div class="card-body">
+              <div class="mb-2 text-muted" style="font-size:0.98rem;">
+                <span class="me-2"><i class="bi bi-person-fill"></i> Ben Stokes</span>
+                <span><i class="bi bi-calendar-event"></i> 16 August 2023</span>
+              </div>
+              <h5 class="card-title fw-bold">The Power of PPC Advertising: How to Maximize Your ROI</h5>
+              <p class="card-text">Unlock the full potential of your digital marketing strategy with the power of PPC.
+              </p>
+              <a href="#" class="fw-bold" style="color:#5b32e7;">Read More <svg xmlns="http://www.w3.org/2000/svg"
+                  width="14" height="14" style="margin-left:2px;" fill="none" viewBox="0 0 24 24" stroke="#5b32e7">
+                  <path d="M5 12h14M13 6l6 6-6 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg></a>
+            </div>
+          </div>
+        </div>
+        <!-- Blog Card 3 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0" style="border-radius:14px;">
+            <img
+              src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=facearea&w=400&h=220&facepad=2"
+              class="card-img-top" alt="Responsive Web Design"
+              style="border-radius:14px 14px 0 0; height:220px; object-fit:cover;">
+            <div class="card-body">
+              <div class="mb-2 text-muted" style="font-size:0.98rem;">
+                <span class="me-2"><i class="bi bi-person-fill"></i> Ben Stokes</span>
+                <span><i class="bi bi-calendar-event"></i> 16 August 2023</span>
+              </div>
+              <h5 class="card-title fw-bold">The Importance of Responsive Web Design in the Mobile Age</h5>
+              <p class="card-text">Where mobile devices dominate internet usage, responsive web design more crucial.</p>
+              <a href="#" class="fw-bold" style="color:#5b32e7;">Read More <svg xmlns="http://www.w3.org/2000/svg"
+                  width="14" height="14" style="margin-left:2px;" fill="none" viewBox="0 0 24 24" stroke="#5b32e7">
+                  <path d="M5 12h14M13 6l6 6-6 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="py-5" style="background: linear-gradient(90deg, #f7f8fd 60%, #e6f7fa 100%); position:relative;">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-2" style="font-size:2.1rem;">Get In Touch With Us Today</h2>
+      <p class="text-center text-muted mb-5" style="max-width:700px;margin:0 auto;">
+        We're here to help! If you have any questions or would like to discuss how our SEO and digital marketing
+        services can benefit your business,
+      </p>
+      <!-- Decorative stars -->
+      <span style="position:absolute;left:7%;top:60px;font-size:2rem;color:#ff5fc0;">✱</span>
+      <span style="position:absolute;right:7%;top:60px;font-size:2rem;color:#ff5fc0;">✱</span>
+      <div class="row justify-content-center g-4">
+        <!-- Contact Info Card -->
+        <div class="col-lg-5">
+          <div class="p-4 h-100" style="background:#18191a; color:#fff; border-radius:12px;">
+            <h5 class="fw-bold mb-3">Contact Info</h5>
+            <p class="mb-4" style="color:#e0e0e0;">We're here to help! If you have any questions or would like to
+              discuss how our SEO and digital marketing services can benefit your business,</p>
+            <hr style="border-color:#333;">
+            <div class="d-flex align-items-start mb-4">
+              <span class="me-3"
+                style="background:#333; border-radius:50%; padding:12px; display:flex; align-items:center; justify-content:center;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24"
+                  stroke="#fff">
+                  <circle cx="12" cy="12" r="10" stroke-width="2" />
+                  <path d="M12 16v-4m0 0V8m0 4h4m-4 0H8" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </span>
+              <div>
+                <div class="fw-bold">Our Location</div>
+                <div style="color:#e0e0e0; font-size:0.98rem;">8708 Technology Forest Pl Suite 125 –G, The Woodlands, TX
+                  773</div>
+              </div>
+            </div>
+            <div class="d-flex align-items-start mb-4">
+              <span class="me-3"
+                style="background:#333; border-radius:50%; padding:12px; display:flex; align-items:center; justify-content:center;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24"
+                  stroke="#fff">
+                  <path
+                    d="M22 16.92V19a2 2 0 01-2 2A19.72 19.72 0 013 5a2 2 0 012-2h2.09a2 2 0 012 1.72c.13.81.36 1.6.68 2.34a2 2 0 01-.45 2.11l-.27.27a16 16 0 006.29 6.29l.27-.27a2 2 0 012.11-.45c.74.32 1.53.55 2.34.68A2 2 0 0121 17.91V19a2 2 0 01-2 2z"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+              <div>
+                <div class="fw-bold">Phone Number</div>
+                <div style="color:#e0e0e0; font-size:0.98rem;">123-456-7890<br>123-456-7890</div>
+              </div>
+            </div>
+            <div class="d-flex align-items-start mb-2">
+              <span class="me-3"
+                style="background:#5b32e7; border-radius:50%; padding:12px; display:flex; align-items:center; justify-content:center;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24"
+                  stroke="#fff">
+                  <path
+                    d="M21 10.5V6a2 2 0 00-2-2H5a2 2 0 00-2 2v4.5M21 10.5v7a2 2 0 01-2 2H5a2 2 0 01-2-2v-7m18 0L12 16.5 3 10.5"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+              <div>
+                <div class="fw-bold">Email Address</div>
+                <div style="color:#e0e0e0; font-size:0.98rem;">infoseoc@gmail.com<br>infoseoc@gmail.com</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Contact Form Card -->
+        <div class="col-lg-7">
+          <div class="p-4 h-100 bg-white" style="border-radius:12px;">
+            <h5 class="fw-bold mb-3">Get In Touch</h5>
+            <p class="mb-4" style="color:#444;">We're here to help! If you have any questions or would like to discuss
+              how our SEO and digital marketing services can benefit your business,</p>
+            <form>
+              <div class="row mb-3">
+                <div class="col-md-6 mb-3 mb-md-0">
+                  <input type="text" class="form-control" placeholder="First Name" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="text" class="form-control" placeholder="Last Name" required>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-6 mb-3 mb-md-0">
+                  <input type="email" class="form-control" placeholder="Email Address" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="text" class="form-control" placeholder="Phone Number" required>
+                </div>
+              </div>
+              <div class="mb-3">
+                <select class="form-select" required>
+                  <option value="">Service Type</option>
+                  <option value="seo">SEO</option>
+                  <option value="ppc">PPC</option>
+                  <option value="smm">Social Media Marketing</option>
+                  <option value="web">Web Design</option>
+                </select>
+              </div>
+              <div class="mb-4">
+                <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary px-4 py-2"
+                style="background:#5b32e7; border:none; border-radius:2rem; font-weight:600;">
+                Free Consultation
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" style="margin-left:4px;" fill="none"
+                  viewBox="0 0 24 24" stroke="#fff">
+                  <path d="M5 12h14M13 6l6 6-6 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call To Action Section -->
+  <section class="py-5" style="background: #5b32e7; position:relative; overflow:hidden;">
+    <!-- Decorative circles left -->
+    <div style="position:absolute; left:0; top:0; width:400px; height:400px; z-index:1;">
+      <svg width="400" height="400" viewBox="0 0 400 400">
+        <circle cx="0" cy="400" r="200" fill="#6c4be7" fill-opacity="0.3" />
+        <circle cx="0" cy="400" r="150" fill="#6c4be7" fill-opacity="0.2" />
+        <circle cx="0" cy="400" r="100" fill="#6c4be7" fill-opacity="0.15" />
+      </svg>
+    </div>
+    <!-- Decorative circles right -->
+    <div style="position:absolute; right:0; top:0; width:400px; height:400px; z-index:1;">
+      <svg width="400" height="400" viewBox="0 0 400 400">
+        <circle cx="400" cy="0" r="200" fill="#6c4be7" fill-opacity="0.3" />
+        <circle cx="400" cy="0" r="150" fill="#6c4be7" fill-opacity="0.2" />
+        <circle cx="400" cy="0" r="100" fill="#6c4be7" fill-opacity="0.15" />
+      </svg>
+    </div>
+    <div class="container position-relative" style="z-index:2;">
+      <h2 class="text-center fw-bold mb-3" style="color:#fff; font-size:2.1rem;">Ready To Take Your SEO To<br>The Next
+        Level</h2>
+      <p class="text-center mb-4" style="color:#fff; max-width:600px; margin:0 auto;">
+        Effective SEO strategies not only elevate a website's visibility but also drive targeted traffic, enhance user
+        experience,
+      </p>
+      <div class="text-center">
+        <a href="#" class="btn btn-light px-4 py-2" style="border-radius:2rem; font-weight:600; color:#5b32e7;">
+          Free Consultation
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" style="margin-left:4px;" fill="none"
+            viewBox="0 0 24 24" stroke="#5b32e7">
+            <path d="M5 12h14M13 6l6 6-6 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="pt-5 pb-3" style="background: linear-gradient(90deg, #f7f8fd 60%, #e6f7fa 100%); position:relative;">
+    <div class="container">
+      <div class="row align-items-start mb-4">
+        <!-- Logo and Description -->
+        <div class="col-md-3 mb-4 mb-md-0">
+          <div class="mb-2">
+            <img src="./images/logo1.png" alt="SEOC Logo" style="height:38px;">
+          </div>
+          <p style="color:#444; font-size:0.98rem;">By optimizing content, leveraging relevant keywords, and adhering to
+            best practices, businesses can secure prominent position (SEO)</p>
+          <div class="d-flex gap-2 mt-3">
+            <a href="#"
+              style="background:#e5e0fa; color:#5b32e7; border-radius:50%; width:32px; height:32px; display:flex; align-items:center; justify-content:center;"><i
+                class="bi bi-facebook"></i></a>
+            <a href="#"
+              style="background:#e5e0fa; color:#5b32e7; border-radius:50%; width:32px; height:32px; display:flex; align-items:center; justify-content:center;"><i
+                class="bi bi-linkedin"></i></a>
+            <a href="#"
+              style="background:#e5e0fa; color:#5b32e7; border-radius:50%; width:32px; height:32px; display:flex; align-items:center; justify-content:center;"><i
+                class="bi bi-instagram"></i></a>
+            <a href="#"
+              style="background:#e5e0fa; color:#5b32e7; border-radius:50%; width:32px; height:32px; display:flex; align-items:center; justify-content:center;"><i
+                class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <!-- About Links -->
+        <div class="col-md-2 mb-4 mb-md-0">
+          <h6 class="fw-bold mb-3">About Link</h6>
+          <ul class="list-unstyled" style="color:#444; font-size:0.98rem;">
+            <li class="mb-2"><a href="#" style="color:inherit; text-decoration:none;">Our Blog</a></li>
+            <li class="mb-2"><a href="#" style="color:inherit; text-decoration:none;">About Us</a></li>
+            <li class="mb-2"><a href="#" style="color:inherit; text-decoration:none;">Services</a></li>
+            <li class="mb-2"><a href="#" style="color:inherit; text-decoration:none;">Marketing</a></li>
+            <li><a href="#" style="color:inherit; text-decoration:none;">Testimonials</a></li>
+            <li><a href="#" style="color:inherit; text-decoration:none;">Contact Us</a></li>
+          </ul>
+        </div>
+        <!-- Contact Info -->
+        <div class="col-md-3 mb-4 mb-md-0">
+          <h6 class="fw-bold mb-3">Get in touch</h6>
+          <ul class="list-unstyled" style="color:#444; font-size:0.98rem;">
+            <li class="mb-2"><i class="bi bi-envelope-fill me-2"></i> Infoseoc@gmail.com</li>
+            <li class="mb-2"><i class="bi bi-geo-alt-fill me-2"></i> 8708 Technology Forest Pl Suite 125 -G, The
+              Woodlands, TX 773</li>
+            <li><i class="bi bi-telephone-fill me-2"></i> 123-456-7890</li>
+          </ul>
+        </div>
+        <!-- Newsletter -->
+        <div class="col-md-4">
+          <h6 class="fw-bold mb-3">Subscribe Our Newsletter</h6>
+          <form class="d-flex align-items-center gap-2">
+            <input type="email" class="form-control" placeholder="Enter Your email"
+              style="max-width:220px; background:#f3f0fa; border:none;">
+            <button type="submit" class="btn"
+              style="background:#5b32e7; color:#fff; border-radius:2rem; font-weight:600; padding:0.5rem 1.5rem;">
+              Subscribe
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="margin-left:4px;" fill="none"
+                viewBox="0 0 24 24" stroke="#fff">
+                <path d="M5 12h14M13 6l6 6-6 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+      <hr style="color:#e5e0fa;">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center pt-2"
+        style="font-size:0.98rem; color:#888;">
+        <div>&copy;Copyright 2024 SEOC . All rights reserved</div>
+        <div class="d-flex gap-3 mt-2 mt-md-0">
+          <a href="#" style="color:inherit; text-decoration:none;">Terms & Conditions</a>
+          <a href="#" style="color:inherit; text-decoration:none;">Privacy Policy</a>
+        </div>
+      </div>
+      <!-- Back to top button -->
+      <a href="#"
+        style="position:fixed; right:32px; bottom:32px; background:#fff; border:2px solid #5b32e7; color:#5b32e7; border-radius:50%; width:40px; height:40px; display:flex; align-items:center; justify-content:center; z-index:999; box-shadow:0 2px 8px rgba(91,50,231,0.08);">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="#5b32e7">
+          <path d="M12 19V5M5 12l7-7 7 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</body>
+
+</html>

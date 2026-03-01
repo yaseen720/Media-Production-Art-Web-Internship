@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Blog - SEOC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background:#f1eefd;">
+        <!--Navbar-->
+<nav class="navbar navbar-expand-lg bg-white border-bottom">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <!-- Replace with your logo image if available -->
+        <img src="./images/logo1.png" alt="Logo">
+        
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Home</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="index1.html">Home 1</a></li>
+              <li><a class="dropdown-item" href="index1.html">Home 2</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="About.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Services</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Service 1</a></li>
+              <li><a class="dropdown-item" href="#">Service 2</a></li>
+              <li><a class="dropdown-item" href="#">Service 3</a></li>
+              <li><a class="dropdown-item" href="#">Service 4</a></li>
+              <li><a class="dropdown-item" href="#">Service 5</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Blogs</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="blog.html">Blog One</a></li>
+              <li><a class="dropdown-item" href="#">Blog left</a></li>
+              <li><a class="dropdown-item" href="#">Blog right</a></li>
+              <li><a class="dropdown-item" href="#">Blog single</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Pages</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">case study</a></li>
+              <li><a class="dropdown-item" href="#">case study single</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+        <span class="search-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <circle cx="11" cy="11" r="8" stroke-width="2"/>
+            <line x1="21" y1="21" x2="16.65" y2="16.65" stroke-width="2"/>
+          </svg>
+        </span>
+        <a href="#" class="btn btn-consult ms-2">
+          Free Consultation
+          <span style="background:#fff; border-radius:50%; padding:0.2rem 0.4rem; color:#5b32e7; margin-left:0.5rem;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path d="M7 17L17 7M17 7H7m10 0v10" stroke="#5b32e7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </nav>
+<!-- Our Blog Hero Section -->
+<section class="py-5 position-relative" style="background:#f1eefdaf; min-height:180px;">
+  <!-- Left 3D Ball -->
+  <span style="position:absolute; left:2%; top:18px; z-index:2;">
+    <svg width="60" height="60" viewBox="0 0 60 60">
+      <defs>
+        <radialGradient id="ballGrad" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="#fff" stop-opacity="0.7"/>
+          <stop offset="100%" stop-color="#5b32e7"/>
+        </radialGradient>
+      </defs>
+      <circle cx="30" cy="30" r="28" fill="url(#ballGrad)"/>
+    </svg>
+  </span>
+  <!-- Right Pink Star -->
+  <span style="position:absolute; right:2%; top:32px; z-index:2; font-size:2.5rem; color:#ff5fc0;">✱</span>
+  <div class="container text-center">
+    <h1 class="fw-bold mb-3" style="font-size:2.6rem;">Our Blog</h1>
+    <nav aria-label="breadcrumb" class="d-flex justify-content-center">
+      <ol class="breadcrumb" style="background:transparent;">
+        <li class="breadcrumb-item"><a href="#" style="color:#222; text-decoration:none;">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page" style="color:#222; font-weight:600;">Our Blog</li>
+      </ol>
+    </nav>
+  </div>
+</section>
+<!-- Featured Blog Post Section -->
+<section class="py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <div class="d-flex flex-column flex-md-row align-items-center p-4" style="background:#f1eefd; border-radius:14px;">
+          <!-- Left: Blog Info -->
+          <div class="flex-fill pe-md-4 mb-4 mb-md-0">
+            <div class="mb-2" style="color:#222; font-size:1rem;">
+              <span class="me-3"><i class="bi bi-person-fill"></i> Ben Stokes</span>
+              <span><i class="bi bi-calendar-event"></i> 16 August 2023</span>
+            </div>
+            <h2 class="fw-bold mb-4" style="font-size:2.1rem;">The Power of PPC Advertising: How to Maximize Your ROI</h2>
+            <a href="#" class="btn px-4 py-2" style="background:#5b32e7; color:#fff; border-radius:2rem; font-weight:600;">
+              Read Full Story
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" style="margin-left:4px;" fill="none" viewBox="0 0 24 24" stroke="#fff"><path d="M5 12h14M13 6l6 6-6 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+          <!-- Right: Blog Image -->
+          <div class="flex-shrink-0" style="max-width:400px;">
+            <img src="./images/imgi_28_blog-img19.png" alt="PPC Advertising" class="img-fluid rounded-3" style="width:100%; max-width:400px;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Blog Grid Section -->
+<section class="py-5" style="background:#f1eefd;">
+  <div class="container">
+    <div class="row g-4">
+      <!-- Blog Card 1 -->
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=facearea&w=400&h=220&facepad=2" class="card-img-top" alt="SEO Tips" style="height:160px; object-fit:cover;">
+          <div class="card-body">
+            <div class="mb-2 text-muted" style="font-size:0.98rem;">
+              <span class="me-2"><i class="bi bi-person-fill"></i> Ben Stokes</span>
+              <span><i class="bi bi-calendar-event"></i> 16 August 2023</span>
+            </div>
+            <h6 class="fw-bold">10 Essential SEO Tips to Boost Your Website's Ranking</h6>
+            <p class="card-text">Are you looking to improve your website's visibility and attract more organic traffic?</p>
+            <a href="#" class="fw-bold" style="color:#5b32e7;">Read More &gt;</a>
+          </div>
+        </div>
+      </div>
+      <!-- Blog Card 2 -->
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <img src="https://img.freepik.com/free-photo/pay-per-click-online-advertising-internet-marketing_53876-124414.jpg?w=740&t=st=1710000000~exp=1710000600~hmac=example" class="card-img-top" alt="PPC Advertising" style="height:160px; object-fit:cover;">
+          <div class="card-body">
+            <div class="mb-2 text-muted" style="font-size:0.98rem;">
+              <span class="me-2"><i class="bi bi-person-fill"></i> Ben Stokes</span>
+              <span><i class="bi bi-calendar-event"></i> 16 August 2023</span>
+            </div>
+            <h6 class="fw-bold">The Power of PPC Advertising: How to Maximize Your ROI</h6>
+            <p class="card-text">Unlock the full potential of your digital marketing strategy with the power of PPC.</p>
+            <a href="#" class="fw-bold" style="color:#5b32e7;">Read More &gt;</a>
+          </div>
+        </div>
+      </div>
+      <!-- Blog Card 3 -->
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=facearea&w=400&h=220&facepad=2" class="card-img-top" alt="Responsive Web Design" style="height:160px; object-fit:cover;">
+          <div class="card-body">
+            <div class="mb-2 text-muted" style="font-size:0.98rem;">
+              <span class="me-2"><i class="bi bi-person-fill"></i> Ben Stokes</span>
+              <span><i class="bi bi-calendar-event"></i> 16 August 2023</span>
+            </div>
+            <h6 class="fw-bold">The Importance of Responsive Web Design in the Mobile Age</h6>
+            <p class="card-text">Where mobile devices dominate internet usage, responsive web design more crucial.</p>
+            <a href="#" class="fw-bold" style="color:#5b32e7;">Read More &gt;</a>
+          </div>
+        </div>
+      </div>
+      <!-- Blog Card 4 -->
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=facearea&w=400&h=220&facepad=2" class="card-img-top" alt="Content Marketing" style="height:160px; object-fit:cover;">
+          <div class="card-body">
+            <div class="mb-2 text-muted" style="font-size:0.98rem;">
+              <span class="me-2"><i class="bi bi-person-fill"></i> Ben Stokes</span>
+              <span><i class="bi bi-calendar-event"></i> 16 August 2023</span>
+            </div>
+            <h6 class="fw-bold">The Power of Content Marketing: How to Drive Engagement</h6>
+            <p class="card-text">Build a strong brand presence and engage with your audience on social media platforms.</p>
+            <a href="#" class="fw-bold" style="color:#5b32e7;">Read More &gt;</a>
+          </div>
+        </div>
+      </div>
+      <!-- Blog Card 5 -->
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=facearea&w=400&h=220&facepad=2" class="card-img-top" alt="Digital Marketing" style="height:160px; object-fit:cover;">
+          <div class="card-body">
+            <div class="mb-2 text-muted" style="font-size:0.98rem;">
+              <span class="me-2"><i class="bi bi-person-fill"></i> Ben Stokes</span>
+              <span><i class="bi bi-calendar-event"></i> 16 August 2023</span>
+            </div>
+            <h6 class="fw-bold">The Importance of SEO in Digital Marketing: A Comprehensive Guide</h6>
+            <p class="card-text">Unlock the full potential of your digital marketing strategy with the power of SEO.</p>
+            <a href="#" class="fw-bold" style="color:#5b32e7;">Read More &gt;</a>
+          </div>
+        </div>
+      </div>
+      <!-- Blog Card 6 -->
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=facearea&w=400&h=220&facepad=2" class="card-img-top" alt="Social Media Marketing" style="height:160px; object-fit:cover;">
+          <div class="card-body">
+            <div class="mb-2 text-muted" style="font-size:0.98rem;">
+              <span class="me-2"><i class="bi bi-person-fill"></i> Ben Stokes</span>
+              <span><i class="bi bi-calendar-event"></i> 16 August 2023</span>
+            </div>
+            <h6 class="fw-bold">The Power of Social Media Marketing to Build Your Brand</h6>
+            <p class="card-text">Build a strong brand presence and engage with your audience on social media platforms.</p>
+            <a href="#" class="fw-bold" style="color:#5b32e7;">Read More &gt;</a>
+          </div>
+        </div>
+      </div>
+      <!-- Blog Card 7 -->
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=facearea&w=400&h=220&facepad=2" class="card-img-top" alt="Social Media Marketing" style="height:160px; object-fit:cover;">
+          <div class="card-body">
+            <div class="mb-2 text-muted" style="font-size:0.98rem;">
+              <span class="me-2"><i class="bi bi-person-fill"></i> Ben Stokes</span>
+              <span><i class="bi bi-calendar-event"></i> 16 August 2023</span>
+            </div>
+            <h6 class="fw-bold">Social Media Marketing Strategies to Drive Engagement Conversion</h6>
+            <p class="card-text">Unlock the full potential of your digital marketing strategy with the power of SMM.</p>
+            <a href="#" class="fw-bold" style="color:#5b32e7;">Read More &gt;</a>
+          </div>
+        </div>
+      </div>
+      <!-- Blog Card 8 -->
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=facearea&w=400&h=220&facepad=2" class="card-img-top" alt="Content Marketing" style="height:160px; object-fit:cover;">
+          <div class="card-body">
+            <div class="mb-2 text-muted" style="font-size:0.98rem;">
+              <span class="me-2"><i class="bi bi-person-fill"></i> Ben Stokes</span>
+              <span><i class="bi bi-calendar-event"></i> 16 August 2023</span>
+            </div>
+            <h6 class="fw-bold">Content Marketing 101: How to Create Engaging Content</h6>
+            <p class="card-text">Are you looking to improve your website's visibility and attract more organic traffic?</p>
+            <a href="#" class="fw-bold" style="color:#5b32e7;">Read More &gt;</a>
+          </div>
+        </div>
+      </div>
+      <!-- Blog Card 9 -->
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=facearea&w=400&h=220&facepad=2" class="card-img-top" alt="Responsive Web Design" style="height:160px; object-fit:cover;">
+          <div class="card-body">
+            <div class="mb-2 text-muted" style="font-size:0.98rem;">
+              <span class="me-2"><i class="bi bi-person-fill"></i> Ben Stokes</span>
+              <span><i class="bi bi-calendar-event"></i> 16 August 2023</span>
+            </div>
+            <h6 class="fw-bold">The Importance of Responsive Web Design in the Mobile Age</h6>
+            <p class="card-text">Where mobile devices dominate internet usage, responsive web design more crucial.</p>
+            <a href="#" class="fw-bold" style="color:#5b32e7;">Read More &gt;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Pagination -->
+    <nav class="d-flex justify-content-center mt-4">
+      <ul class="pagination">
+        <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1">&lt;</a></li>
+        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">&gt;</a></li>
+      </ul>
+    </nav>
+  </div>
+</section>
+<!-- Call-to-Action Section -->
+<section class="py-5" style="background:#5b32e7;">
+  <div class="container text-center">
+    <h2 class="fw-bold text-white mb-3" style="font-size:2rem;">Ready To Take Your SEO To The Next Level</h2>
+    <p class="text-white mb-4" style="font-size:1.05rem;">Effective SEO strategies not only enhance a website's visibility but also drive targeted traffic, enhance user experience, and increase opportunities.</p>
+    <a href="#" class="btn btn-light px-4 py-2 fw-bold rounded-pill d-inline-flex align-items-center" style="font-size:1.1rem;">
+      Free Consultation
+      <span class="ms-2"><i class="bi bi-arrow-right-circle-fill" style="font-size:1.3rem;"></i></span>
+    </a>
+  </div>
+</section>
+<!-- Footer Section -->
+<footer class="pt-5 pb-3 mt-0" style="background:#fff; border-top:1px solid #eee; position:relative;">
+  <div class="container">
+    <div class="row gy-4 align-items-start">
+      <!-- Logo & Description -->
+      <div class="col-md-3">
+        <div class="mb-2 d-flex align-items-center">
+          <img src="https://i.ibb.co/6bQ6Q0k/seo-logo.png" alt="SEOC Logo" style="height:38px; width:auto; margin-right:8px;">
+          <span class="fw-bold" style="font-size:2rem; color:#5b32e7;">SEOC</span>
+        </div>
+        <p class="mb-3" style="color:#222; font-size:1rem;">By optimizing content, leveraging relevant keywords, and adhering to best practices, businesses can secure prominent position (SEO)</p>
+        <div class="d-flex gap-2">
+          <a href="#" class="d-inline-flex align-items-center justify-content-center rounded-circle" style="background:#ede9fb; width:38px; height:38px; color:#5b32e7;"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="d-inline-flex align-items-center justify-content-center rounded-circle" style="background:#ede9fb; width:38px; height:38px; color:#5b32e7;"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="d-inline-flex align-items-center justify-content-center rounded-circle" style="background:#ede9fb; width:38px; height:38px; color:#5b32e7;"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="d-inline-flex align-items-center justify-content-center rounded-circle" style="background:#ede9fb; width:38px; height:38px; color:#5b32e7;"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+      <!-- About Links -->
+      <div class="col-md-2">
+        <h5 class="fw-bold mb-3" style="color:#222;">About<br>Link</h5>
+        <ul class="list-unstyled" style="font-size:1rem;">
+          <li class="mb-2"><a href="#" style="color:#222; text-decoration:none;">Our Blog</a></li>
+          <li class="mb-2"><a href="#" style="color:#222; text-decoration:none;">About Us</a></li>
+          <li class="mb-2"><a href="#" style="color:#222; text-decoration:none;">Services</a></li>
+          <li class="mb-2"><a href="#" style="color:#222; text-decoration:none;">Marketing</a></li>
+          <li class="mb-2"><a href="#" style="color:#222; text-decoration:none;">Testimonials</a></li>
+          <li><a href="#" style="color:#222; text-decoration:none;">Contact Us</a></li>
+        </ul>
+      </div>
+      <!-- Get in Touch -->
+      <div class="col-md-3">
+        <h5 class="fw-bold mb-3" style="color:#222;">Get in touch</h5>
+        <ul class="list-unstyled" style="font-size:1rem;">
+          <li class="mb-2"><i class="bi bi-envelope-fill me-2"></i> Infoseoc@gmail.com</li>
+          <li class="mb-2"><i class="bi bi-geo-alt-fill me-2"></i> 8708 Technology Forest<br>Pl Suite 125 -G, The Woodlands, TX 773</li>
+          <li><i class="bi bi-telephone-fill me-2"></i> 123-456-7890</li>
+        </ul>
+      </div>
+      <!-- Newsletter -->
+      <div class="col-md-4">
+        <h5 class="fw-bold mb-3" style="color:#222;">Subscribe Our Newsletter</h5>
+        <form class="d-flex align-items-center" style="max-width:370px;">
+          <input type="email" class="form-control rounded-pill px-4 py-2 me-2" placeholder="Enter Your email" style="background:linear-gradient(90deg,#ede9fb 70%,#ede9fb 100%); border:none;">
+          <button type="submit" class="btn fw-bold px-4 py-2 rounded-pill d-flex align-items-center" style="background:#5b32e7; color:#fff; font-size:1.1rem;">
+            Subscribe <i class="bi bi-arrow-up-right ms-2" style="font-size:1.2rem;"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+    <hr class="my-4" style="border-color:#eee;">
+    <div class="row align-items-center">
+      <div class="col-md-6 text-md-start text-center mb-2 mb-md-0" style="font-size:1rem; color:#222;">
+        <span><i class="bi bi-c-circle"></i>Copyright 2024 SEOC . All rights reserved</span>
+      </div>
+      <div class="col-md-6 d-flex justify-content-md-end justify-content-center align-items-center gap-4" style="font-size:1rem;">
+        <a href="#" style="color:#222; text-decoration:none;">Terms & Conditions</a>
+        <a href="#" style="color:#222; text-decoration:none;">Privacy Policy</a>
+        <a href="#top" class="d-inline-flex align-items-center justify-content-center rounded-circle border border-2" style="width:44px; height:44px; color:#222; font-size:1.5rem;"><i class="bi bi-arrow-up"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- Bootstrap Icons CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</body>
+</html>
